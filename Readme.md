@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александр Шевко](https://up.htmlacademy.ru/adaptive/8/user/107217).
-* Наставник: `Неизвестно`.
+* Наставник: `Максим Сёмушкин`.
 
 ---
 
