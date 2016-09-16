@@ -5,11 +5,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-browser-sync");
   grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.loadNpmTasks("grunt-postcss");
+  require('time-grunt')(grunt);
 
   grunt.initConfig({
     less: {
       style: {
         files: {
+          "css/normalize.css": "less/normalize.less",
           "css/style.css": "less/style.less"
         }
       }
