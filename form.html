@@ -8,27 +8,29 @@
 </head>
 <body>
 <header class="page-header">
-  <div class="logo">
-    <a href="index.html" class="logo__link"><img src="img/logo-mobile.svg" alt="mishka"></a>
+  <div class="page-header__inner">
+    <div class="logo">
+      <a href="index.html" class="logo__link"><img src="img/logo-mobile.svg" alt="mishka"></a>
+    </div>
+    <nav class="main-nav">
+      <button class="main-nav__toggle main-nav__toggle--closed" type="button">X</button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Каталог товаров</a></li>
+        <li class="main-nav__item"><a href="form.html" class="main-nav__link">Вязание на заказ</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Поиск по сайту</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Корзина: пока пуста</a></li>
+      </ul>
+    </nav>
   </div>
-  <nav class="main-nav">
-    <button class="main-nav__toggle main-nav__toggle--closed" type="button">X</button>
-    <ul class="main-nav__list">
-      <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Каталог товаров</a></li>
-      <li class="main-nav__item"><a href="form.html" class="main-nav__link">Вязание на заказ</a></li>
-      <li class="main-nav__item"><a href="#" class="main-nav__link">Поиск по сайту</a></li>
-      <li class="main-nav__item"><a href="#" class="main-nav__link">Корзина: пока пуста</a></li>
-    </ul>
-  </nav>
 </header>
 <main>
   <div class="intro">
-    <div class="container">
+    <div class="intro__inner">
       <h1 class="intro__title">Вязание на заказ</h1>
     </div>
   </div>
   <form class="form" action="">
-    <div class="container">
+    <div class="form__inner">
       <div class="form__content">
         <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
           свяжемся с вами, чтобы уточнить детали.</p>

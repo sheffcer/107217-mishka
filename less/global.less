@@ -1,0 +1,27 @@
+body {
+  min-width: 320px;
+  outline: 1px dotted green;
+  font-family: "Open Sans", "Arial", sans-serif;
+  background: url("/img/mishka-index-mobile.jpg") no-repeat center top;
+  background-color: @bg-darkgrey;
+  min-height: 3932x;
+  padding-top: 1px;
+}
+
+@media @tablet-widths {
+  body {
+    background: url("/img/mishka-index-tablet.jpg") no-repeat center top;
+    min-height: 3710x;
+    background-color: @bg-darkgrey;
+  }
+}
+
+@media @desktop-widths {
+  body {
+    background: url("/img/mishka-index-desktop.jpg") no-repeat center top;
+    min-height: 3623x;
+    background-color: @bg-darkgrey;
+  }
+}
+
+

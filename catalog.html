@@ -8,27 +8,29 @@
 </head>
 <body>
 <header class="page-header">
-  <div class="logo">
-    <a href="index.html" class="logo__link"><img src="img/logo-mobile.svg" alt="mishka"></a>
+  <div class="page-header__inner">
+    <div class="logo">
+      <a href="index.html" class="logo__link"><img src="img/logo-mobile.svg" alt="mishka"></a>
+    </div>
+    <nav class="main-nav">
+      <button class="main-nav__toggle main-nav__toggle--closed" type="button">X</button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a class="main-nav__link">Каталог товаров</a></li>
+        <li class="main-nav__item"><a href="form.html" class="main-nav__link">Вязание на заказ</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Поиск по сайту</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Корзина: пока пуста</a></li>
+      </ul>
+    </nav>
   </div>
-  <nav class="main-nav">
-    <button class="main-nav__toggle main-nav__toggle--closed" type="button">X</button>
-    <ul class="main-nav__list">
-      <li class="main-nav__item"><a class="main-nav__link">Каталог товаров</a></li>
-      <li class="main-nav__item"><a href="form.html" class="main-nav__link">Вязание на заказ</a></li>
-      <li class="main-nav__item"><a href="#" class="main-nav__link">Поиск по сайту</a></li>
-      <li class="main-nav__item"><a href="#" class="main-nav__link">Корзина: пока пуста</a></li>
-    </ul>
-  </nav>
 </header>
 <main>
   <div class="intro">
-    <div class="container">
+    <div class="intro__inner">
       <h1 class="intro__title">Каталог товаров</h1>
     </div>
   </div>
   <div class="goods">
-    <div class="container">
+    <div class="goods__inner">
       <div class="goods__item">
         <a href="#" class="goods__img" alt>
           <img src="http://placehold.it/260x195" alt="rabbit" width="260" height="195">
@@ -71,7 +73,7 @@
     </div>
   </div>
   <div class="production-info">
-    <div class="container">
+    <div class="production-info__inner">
       <h2 class="production-info__title">Процесс производства</h2>
       <div class="production-info__video">
         <img src="http://placehold.it/260x150" alt="production" width="260" height="150">
@@ -84,7 +86,7 @@
   </div>
 </main>
 <footer class="page-footer">
-  <div class="container">
+  <div class="page-footer__inner">
     <div class="page-footer__social">
       <div class="social-links">
         <a href="" class="social-link  social-link--inst">Instagramm</a>
