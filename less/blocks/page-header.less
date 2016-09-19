@@ -1,6 +1,6 @@
 .page-header {
-  min-height: 395px;
-  outline: 1px dashed black;
+  min-height: 79px;
+  outline: 2px dashed black;
 //  padding-bottom: 395px;
 
   &__inner {
@@ -8,8 +8,16 @@
   }
 }
 
+@media @tablet-widths {
+  .page-header {
+    min-height: 89px;
+  }
+}
+
 @media @desktop-widths {
-  .page-header__inner {
+  .page-header{
+    &__inner {
     position: relative;
+    }
   }
 }
