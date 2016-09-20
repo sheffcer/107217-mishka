@@ -17,20 +17,24 @@
 <!--        <button class="main-nav__toggle main-nav__toggle--closed" type="button">X</button>-->
         <div class="main-nav__inner">
           <ul class="main-nav__list">
+<!--
             <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Каталог товаров</a></li>
             <li class="main-nav__item"><a href="form.html" class="main-nav__link">Вязание на заказ</a></li>
             <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Новые поступления</a></li>
             <li class="main-nav__item"><a href="form.html" class="main-nav__link">Распродажа</a></li>
+-->
           </ul>
           <ul class="main-nav__user-list">
+<!--
           <li class="main-nav__item  main-nav__item--search"><a href="#" class="main-nav__link">Поиск по сайту</a></li>
           <li class="main-nav__item__item  main-nav__item--cart"><a href="#" class="main-nav__link">Корзина: пока пуста</a></li>
+-->
         </ul>
       </div>
       </nav>
     </div>
   </div>
-  <span class="page-header__delivery">Бесплатная доставка по России</span>
+<!--  <span class="page-header__delivery">Бесплатная доставка по России</span>-->
 </header>
 <main>
   <div class="intro">
@@ -41,10 +45,8 @@
   <div class="goods-categories">
     <div class="goods-categories__inner">
       <ul class="goods-categories__list">
-<!--
         <li class="goods-categories__item"><a href="#" class="goods-categories__link">Предметы<br> интерьера</a></li>
         <li class="goods-categories__item"><a href="#" class="goods-categories__link">Детские<br> игрушки</a></li>
--->
       </ul>
     </div>
   </div>
@@ -56,8 +58,8 @@
       <p class="goods-hit__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
         размерах.</p>
 -->
-      <table class="goods-hit__table">
 <!--
+      <table class="goods-hit__table">
         <tr>
           <td class="goods-hit__characteristic">Цвет:</td>
           <td class="goods-hit__characteristic">«Тиффани»/серый</td>
@@ -70,23 +72,27 @@
           <td class="goods-hit__characteristic">Высота:</td>
           <td class="goods-hit__characteristic">15см</td>
         </tr>
--->
       </table>
-      <img src="//img/triple-set-mobile@1x.jpg" alt="basket" class="goods-hit__img" width="260" height="316">
+      <img src="///img/triple-set-mobile@1x.jpg" alt="" class="goods-hit__img" width="260" height="316">
       <p class="goods-hit__price">Цена: 990 руб.</p>
       <a href="#" class="btn">ЗАКАЗАТЬ</a>
+-->
     </div>
   </div>
   <div class="features">
     <div class="features__inner">
       <h2 class="fearures__title">Коротко о нас:</h2>
       <ul class="features__list">
-        <li class="features__item  features__item--ecology">Экологически чистые материалы</li>
-        <li class="features__item  features__item--scandinavia">Скандинавский стиль по российской цене</li>
-        <li class="features__item  features__item--like">Увеличивает лайки на фотографиях</li>
-        <li class="features__item  features__item--love">Связано вручную с любовью и умилением</li>
-        <li class="features__item  features__item-manufacture">Поддержка отечественного производителя</li>
-        <li class="features__item  features__item--gift">Поставляется в подарочной упаковке</li>
+        <div class="features__item-float">
+          <li class="features__item  features__item--ecology">Экологически<br> чистые материалы</li>
+          <li class="features__item  features__item--scandinavia">Скандинавский стиль<br> по российской цене</li>
+          <li class="features__item  features__item--like">Увеличивает лайки<br> на фотографиях</li>
+        </div>
+        <div class="features__item-float">
+          <li class="features__item  features__item--love">Связано вручную с<br> любовью и умилением</li>
+          <li class="features__item  features__item--manufacture">Поддержка отечественного<br> производителя</li>
+          <li class="features__item  features__item--gift">Поставляется в<br> подарочной упаковке</li>
+        </div>
       </ul>
     </div>
   </div>
@@ -96,16 +102,18 @@
         <div class="reviews__item">
           <h2 class="reviews__title">Отзывы</h2>
           <div class="reviews__item">
-            <blockquote class="review__description">Я молодая мама, но всё равно фотографии не набирали и близко
+            <blockquote class="reviews__description">Я молодая мама, но всё равно фотографии не набирали и близко
               такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и
               игрушек в Мишке, и мои фотографии сразу стали более стильнее, а также набирают больше лайков!
             </blockquote>
-            <span><cite class="review__author">Анастасия Красильникова</cite></span>
+            <span><cite class="reviews__author">Анастасия Красильникова</cite></span>
             <cite class="reviews__nick">@misssssiskras</cite>
-            <button class="reviews__prev" type='button'>Назад</button>
-            <button class="reviews__next" type='button'>Вперед</button>
+            <div class="review__nav">
+              <button class="reviews__prev" type='button'></button>
+              <button class="reviews__next" type='button'></button>
+            </div>
           </div>
-          <a href="" class="btn">Написать</a>
+          <a href="" class="btn btn--reviews">Написать</a>
         </div>
       </div>
     </div>

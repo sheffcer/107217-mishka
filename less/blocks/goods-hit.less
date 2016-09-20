@@ -1,6 +1,35 @@
 .goods-hit {
+  min-height: 830px;
+}
 
-  &__inner {
-    .container();
+
+.goods-hit__inner {
+  .container();
+  outline: 2px dashed blue;
+  margin-top: -10px;
+  padding-bottom: 830px;
+}
+
+
+@media @tablet-widths {
+  .goods-hit {
+    min-height: 630px;
+  }
+
+  .goods-hit__inner {
+    margin-top: 3px;
+    padding-bottom: 625px;
   }
 }
+
+@media @desktop-widths {
+  .goods-hit {
+    min-width: 805px;
+  }
+
+  .goods-hit__inner {
+    margin-top: 3px;
+    padding-bottom: 805px;
+  }
+}
+

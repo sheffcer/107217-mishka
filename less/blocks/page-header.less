@@ -1,23 +1,28 @@
 .page-header {
   min-height: 79px;
-  outline: 2px dashed black;
 //  padding-bottom: 395px;
+}
 
-  &__inner {
-    .container();
-  }
+.page-header__inner {
+  .container();
+  outline: 2px dashed black;
 }
 
 @media @tablet-widths {
   .page-header {
+    padding-top: 2px;
     min-height: 89px;
+  }
+
+  .page-header__inner {
+    position: relative;
   }
 }
 
 @media @desktop-widths {
-  .page-header{
-    &__inner {
+  .page-header__inner {
     position: relative;
-    }
+    padding-top: 2px;
+     min-height: 89px;
   }
 }

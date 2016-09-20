@@ -1,25 +1,62 @@
 .reviews {
-  outline: 1px dashed blue;
-
-  &__inner {
-    .container();
-  }
-
-  &__prev {
-    display: inline-block;
-    vertical-align: middle;
-    width: 56px;
-    height: 32px;
-    background-image: url(../img/icon-left-arrow.svg);
-    background-repeat: no-repeat;
+  min-height: 630px;
+  margin-top: -55px;
 }
 
-  &__next {
-    display: inline-block;
-    vertical-align: middle;
-    width: 56px;
-    height: 32px;
-    background-image: url(../img/icon-right-arrow.svg);
-    background-repeat: no-repeat;
-  }
+
+.reviews__inner {
+  .container();
+  outline: 2px dashed blue;
+  padding-bottom: 180px;
 }
+
+.review__nav {
+//  display: inline-block;
+  font-size: 0;
+}
+
+.reviews__prev {
+  width: 130px;
+  margin-top: 40px;
+  display: inline-block;
+  vertical-align: middle;
+//  font-size: 0;
+//  width: 56px;
+  height: 52px;
+  background-image: url(../img/icon-left-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 40px 10px;
+}
+
+.reviews__next {
+  width: 130px;
+  margin-top: 40px;
+  display: inline-block;
+  vertical-align: middle;
+//  font-size: 0;
+//  width: 56px;
+  height: 52px;
+  background-image: url(../img/icon-right-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 30px 10px;
+}
+
+.reviews__description {
+  display: block;
+  text-align: left;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.reviews__author {
+  display: block;
+  margin-top: 25px;
+}
+
+.reviews__nick {
+  display: block;
+  margin-top: 15px;
+}
+
