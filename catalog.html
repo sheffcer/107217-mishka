@@ -13,93 +13,119 @@
     <div class="logo">
       <a href="index.html" class="logo__link"><img src="img/logo-mobile.svg" alt="mishka"></a>
     </div>
-    <nav class="main-nav">
-      <button class="main-nav__toggle main-nav__toggle--closed" type="button">X</button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item"><a class="main-nav__link">Каталог товаров</a></li>
-        <li class="main-nav__item"><a href="form.html" class="main-nav__link">Вязание на заказ</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Поиск по сайту</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Корзина: пока пуста</a></li>
-      </ul>
-    </nav>
+    <div>
+    <nav class="main-nav main-nav--catalog">
+<!--        <button class="main-nav__toggle main-nav__toggle--closed" type="button">X</button>-->
+        <div class="main-nav__inner">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+            <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item">
+            <a href="form.html" class="main-nav__link">Вязание на заказ</a>
+            </li>
+            <li class="main-nav__item">
+            <a href="catalog.html" class="main-nav__link">Новые поступления</a>
+            </li>
+            <li class="main-nav__item">
+            <a href="form.html" class="main-nav__link">Распродажа</a>
+            </li>
+          </ul>
+          <ul class="main-nav__user-list">
+          <li class="main-nav__item  main-nav__item--search">
+          <a href="#" class="main-nav__link">Поиск по сайту</a>
+          </li>
+          <li class="main-nav__item  main-nav__item--cart">
+          <a href="#" class="main-nav__link">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </div>
+      </nav>
+    </div>
+    <span class="page-header__delivery">Бесплатная доставка по России</span>
   </div>
-</header>
+  </header>
 <main>
-  <div class="intro">
-    <div class="intro__inner">
-      <h1 class="intro__title">Каталог товаров</h1>
+  <div class="catalog">
+    <div class="catalog__inner">
+      <h1 class="catalog__title">Каталог товаров</h1>
     </div>
   </div>
   <div class="goods">
     <div class="goods__inner">
       <div class="goods__item">
         <a href="#" class="goods__img" alt>
-          <img src="http://placehold.it/260x195" alt="rabbit" width="260" height="195">
+          <img src="img/photo-1-mobile@1x.jpg" alt="rabbit" width="260" height="195">
         </a>
-        <h2 class="goods__title">
-          <a href="#">Зайчик-попрыгайчик</a>
-        </h2>
-        <p class="goods__description">Рост 30 см, вес 200 г</p>
-        <div class="goods__order">
-          <div class="goods__price">1 200 руб.</div>
-          <div class="goods__cart"><a href="">cart</a></div>
+        <div class="goods__item-content">
+          <h2 class="goods__title">
+            <a href="#">Зайчик-попрыгайчик</a>
+          </h2>
+          <p class="goods__description">Рост 30 см, вес 200 г</p>
+          <div class="goods__order">
+            <div class="goods__price">1 200 руб.</div>
+            <div class="goods__cart"><a href="">cart</a></div>
+          </div>
         </div>
       </div>
       <div class="goods__item">
         <a href="#" class="goods__img" alt>
-          <img src="http://placehold.it/260x195" alt="linen-cart" width="260" height="195">
+          <img src="img/photo-2-mobile@1x.jpg" alt="linen-cart" width="260" height="195">
         </a>
-        <h2 class="goods__title">
-          <a href="#">Корзинка для белья</a>
-        </h2>
-        <p class="goods__description">Диаметр 15 см, высота 10 см</p>
-        <div class="goods__order">
-          <div class="goods__price">690 руб.</div>
-          <div class="goods__cart"><a href="#">cart</a></div>
+        <div class="goods__item-content">
+          <h2 class="goods__title">
+            <a href="#">Корзинка для белья</a>
+          </h2>
+          <p class="goods__description">Диаметр 15 см, высота 10 см</p>
+          <div class="goods__order">
+            <div class="goods__price">690 руб.</div>
+            <div class="goods__cart"><a href="#">cart</a></div>
+          </div>
         </div>
       </div>
       <div class="goods__item">
         <a href="#" class="goods__img" alt="">
-          <img src="http://placehold.it/260x195" alt="toy-cart" width="260" height="195">
+          <img src="img/photo-3-mobile@1x.jpg" alt="toy-cart" width="260" height="195">
         </a>
-        <h2 class="goods__title">
-          <a href="#">Большая корзинка для игрушек</a>
-        </h2>
-        <p class="goods__description">Диаметр 30 см, высота 30 см</p>
-        <div class="goods__order">
-          <div class="goods__price">1 500 руб.</div>
-          <div class="goods__cart"><a href="#">cart</a></div>
-        </div>
+        <div class="goods__item-content">
+         <h2 class="goods__title">
+          <a href="#">Большая корзинка<br> для игрушек</a>
+         </h2>
+           <p class="goods__description">Диаметр 30 см, высота 30 см</p>
+           <div class="goods__order">
+             <div class="goods__price">1 500 руб.</div>
+             <div class="goods__cart"><a href="#">cart</a></div>
+            </div>
+         </div>
       </div>
     </div>
   </div>
   <div class="production-info">
     <div class="production-info__inner">
-      <h2 class="production-info__title">Процесс производства</h2>
+      <h2 class="production-info__title">Процесс<br> производства</h2>
       <div class="production-info__video">
-        <img src="http://placehold.it/260x150" alt="production" width="260" height="150">
+        <img src="img/video-mobile@1x.jpg" alt="production" width="260" height="150">
       </div>
-      <p class="production-info__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о
-        том,
-        как появляются наши товары.</p>
-      <a href="" class="btn">СДелать заказ</a>
+      <div class="production-info__content">
+        <p class="production-info__description">По просьбам наших<br> любимых фолловеров мы<br> сняли для вас подробное<br> видео о том, как появляются <br> наши товары.</p>
+<!--        <a href="" class="btn  btn--production-info">СДелать заказ</a>-->
+      </div>
     </div>
   </div>
 </main>
 <footer class="page-footer">
   <div class="page-footer__inner">
-    <div class="page-footer__social">
-      <div class="social-links">
-        <a href="" class="social-link  social-link--inst">Instagramm</a>
-        <a href="" class="social-link  social-link--fb">Facebook</a>
-        <a href="" class="social-link  social-link--twitter">Twitter</a>
-      </div>
-    </div>
-    <div class="page-footer__copyright">
-      <a href="" class="page-footer__link">Разработано
-        <img src="img/logo-htmlacademy.svg" alt="HTMLAcademy">
-      </a>
-    </div>
+    <div class="logo  logo--footer">
+      <a href="#" class="logo__link"><img src="img/logo-mobile.svg" alt="mishka"></a>
+  </div>
+  <div class="social-links">
+    <a href="#" class="social-link  social-link--inst">Instagramm</a>
+    <a href="#" class="social-link  social-link--fb">Facebook</a>
+    <a href="#" class="social-link  social-link--twitter">Twitter</a>
+  </div>
+  <div class="page-footer__copyright">
+    <a href="" class="page-footer__link">Разработано<img src="img/logo-htmlacademy.svg" alt="HTMLAcademy" width="27" height="34"></a>
+  </div>
   </div>
 </footer>
 <form action="" class="modal-cart">
