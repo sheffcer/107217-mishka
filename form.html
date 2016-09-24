@@ -46,33 +46,31 @@
   </div>
   </header>
 <main>
-  <div class="intro">
-    <div class="intro__inner">
-      <h1 class="intro__title">Вязание на заказ</h1>
+  <div class="catalog">
+    <div class="catalog__inner">
+      <h1 class="catalog__title  catalog__title--form">Вязание на заказ</h1>
     </div>
   </div>
   <form class="form" action="">
     <div class="form__inner">
       <div class="form__content">
-        <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
+        <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
           свяжемся с вами, чтобы уточнить детали.</p>
         <fieldset class="form__fieldset  form__fieldset--type">
-          <div class="container">
-            <legend class="form__title">ТИП</legend>
-            <div class="form__item">
-              <input type="radio" class="form__input form__input--radio" name="popular" id="accessory">
-              <label for="accessory" class="type__label">Аксессуар для интерьера</label>
-            </div>
-            <div class="form__item">
-              <input type="radio" class="form__input form__input--radio" name="popular" id="toy">
-              <label for="toy" class="type__label">Детская игрушка</label>
-            </div>
+          <legend class="form__title">ТИП</legend>
+          <div class="form__item">
+            <input type="radio" class="form__input form__input--radio" name="popular" id="accessory">
+            <label for="accessory" class="type__label">Аксессуар для интерьера</label>
+          </div>
+          <div class="form__item">
+            <input type="radio" class="form__input form__input--radio" name="popular" id="toy">
+            <label for="toy" class="type__label">Детская игрушка</label>
           </div>
         </fieldset>
         <fieldset class="form__fieldset  form__fieldset--color">
-          <div class="container">
-            <legend class="color__title">ЦВЕТ</legend>
-            <div class="form__item">
+          <legend class="color__title">ЦВЕТ</legend>
+         <div class="form__items">
+             <div class="form__item">
               <input type="checkbox" class="form__input form__input--checkbox" name="white" id="white">
               <label for="white" class="form__label">Белый</label>
             </div>
@@ -99,51 +97,38 @@
           </div>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--personal">
-          <div class="container">
-            <legend class="form__title">ФИО</legend>
-            <div class="form__item">
-              <label for="name" class="form__label">Имя:</label>
-              <input type="text" class="form__input" name="name" id="name" placeholder="Введите ваше имя" required>
-            </div>
-            <div class="form__item">
-              <label for="surname" class="form__label">Фамилия:</label>
-              <input type="text" class="form__input" name="surname" id="surname" placeholder="Укажите фамилию" required>
-            </div>
-            <div class="form__item">
-              <label for="second-name" class="form__label">Отчество:</label>
-              <input type="text" class="form__input" name="second-name" id="second-name"
-                     placeholder="Отчество, если желаете" required>
-            </div>
+          <legend class="form__title">ФИО</legend>
+          <div class="form__item">
+            <label for="name" class="form__label">Имя:</label>
+            <input type="text" class="form__input" name="name" id="name" placeholder="Введите ваше имя" required>
+          </div>
+          <div class="form__item">
+            <label for="surname" class="form__label">Фамилия:</label>
+            <input type="text" class="form__input" name="surname" id="surname" placeholder="Укажите фамилию" required>
+          </div>
+          <div class="form__item">
+            <label for="second-name" class="form__label">Отчество:</label>
+            <input type="text" class="form__input" name="second-name" id="second-name" placeholder="Отчество, если желаете" required>
           </div>
         </fieldset>
         <fieldset class="form__fieldset  form__fieldset--phone">
-          <div class="container">
-            <div class="form__item">
-              <legend class="form__title">ТЕЛ</legend>
-              <input type="tel" class="form__input  form__input--tel" name="phone" id="phone" placeholder="+7 ХХХ ХХ ХХ"
-                     required>
-            </div>
+          <div class="form__item">
+            <legend class="form__title">ТЕЛ</legend>
+            <input type="tel" class="form__input  form__input--tel" name="phone" id="phone" placeholder="+7 ХХХ ХХ ХХ" required>
           </div>
         </fieldset>
         <fieldset class="form__fieldset  form__fieldset--mail">
-          <div class="container">
-            <div class="form__item">
-              <legend class="form__title">ТЕЛ</legend>
-              <input type="email" class="form__input form__input--mail" name="mail" id="mail" placeholder="Ваш Email"
-                     required>
-            </div>
+          <div class="form__item">
+            <legend class="form__title">E-MAIL</legend>
+            <input type="email" class="form__input form__input--mail" name="mail" id="mail" placeholder="Ваш Email" required>
           </div>
         </fieldset>
         <fieldset class="form__fieldset  form__fieldset--extra">
-          <div class="container">
-            <legend class="form__title">ДОП</legend>
-            <textarea class="form__textarea" name="comment">Опишите подробно все свои восторги </textarea>
-            <p class="form__submessage">Все поля обязательны для заполнения</p>
-          </div>
+          <legend class="form__title">ДОП</legend>
+          <textarea class="form__textarea" name="comment">Опишите подробно все свои восторги </textarea>
         </fieldset>
-        <div class="container">
-          <input type="submit" class="btn" value="ОТПРАВИТЬ ЗАКАЗ">
-        </div>
+        <p class="form__submessage">Все поля обязательны для заполнения</p>
+        <input type="submit" class="btn btn--form" value="ОТПРАВИТЬ ЗАКАЗ">
       </div>
     </div>
   </form>

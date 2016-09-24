@@ -1,6 +1,98 @@
 .form {
+}
 
-  &__inner {
-    .container();
+.form__inner {
+  .container();
+  outline: 2px dashed red;
+}
+
+.form__input {
+  outline: 1px dotted red;
+}
+
+.form__description {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #333333;
+  outline: 2px dashed blue;
+  margin-bottom: 20px;
+}
+
+.form__fieldset--type {
+  padding-bottom: 80px;
+  outline: 2px dashed blue;
+  margin-bottom: 20px;
+}
+
+
+.form__fieldset--color {
+  padding-bottom: 250px;
+  outline: 2px dashed blue;
+  margin-bottom: 20px;
+}
+
+.form__fieldset--personal {
+  padding-bottom: 130px;
+  outline: 2px dashed blue;
+  margin-bottom: 30px;
+}
+
+.form__fieldset--phone {
+  padding-bottom: 20px;
+  outline: 2px dashed blue;
+  margin-bottom: 40px;
+}
+
+.form__fieldset--mail {
+  outline: 2px dashed blue;
+  margin-bottom: 50px;
+}
+
+.form__fieldset--extra {
+  padding-bottom: 100px;
+  outline: 2px dashed blue;
+  margin-bottom: 20px;
+}
+
+.form__submessage {
+  outline: 2px dashed blue;
+}
+
+@media @tablet-widths {
+  .form__description {
+    font-size: 17px;
+    line-height: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+  }
+
+  .form__fieldset--color {
+    padding-bottom: 160px;
+  }
+
+  .form__fieldset--personal {
+    padding-bottom: 180px;
+  }
+
+}
+
+@media @desktop-widths {
+  .form__description {
+    margin-bottom: 60px;
+  }
+
+  .form__fieldset--type {
+  padding-bottom: 60px;
+  outline: 2px dashed blue;
+  margin-bottom: 40px;
+  }
+
+  .form__fieldset--color {
+    padding-bottom: 100px;
+  }
+
+  .form__fieldset--extra {
+    margin-bottom: 60px;
   }
 }
