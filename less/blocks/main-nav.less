@@ -37,7 +37,7 @@
   display: none;
 }
 
-.main-nav__user-list {
+.main-nav__list--user {
   list-style: none;
 }
 
@@ -61,7 +61,8 @@
     float: left;
   }
 
-  .main-nav__user-list {
+  .main-nav__list--user {
+    margin: 0;
     margin-top: -165px;
     width: 300px;
     float: right;
@@ -82,9 +83,9 @@
     padding: 0;
   }
 
-  .main-nav__user-list {
-    margin: 0;
-  }
+//  .main-nav__user-list {
+//    margin: 0;
+//  }
 
   .main-nav__item:nth-child(n+3) {
   display: inline-block;
@@ -92,5 +93,9 @@
 
   .main-nav__list {
     margin-top: 20px;
+
+    &--user {
+      margin: 0;
+    }
   }
 }

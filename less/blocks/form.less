@@ -1,4 +1,5 @@
-.form {
+.form__fieldset {
+  border: none;
 }
 
 .form__inner {
@@ -75,6 +76,24 @@
     padding-bottom: 180px;
   }
 
+  .form__items {
+    margin-left: 167px;
+    width: 500px;
+    outline: 2px dashed aqua;
+  }
+
+  .form__item {
+    margin-left: 167px;
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    outline: 2px dashed green;
+
+    &--color {
+      min-height: 56px;
+      margin: 0;
+    }
+  }
 }
 
 @media @desktop-widths {
@@ -83,16 +102,30 @@
   }
 
   .form__fieldset--type {
-  padding-bottom: 60px;
-  outline: 2px dashed blue;
-  margin-bottom: 40px;
+    padding-bottom: 60px;
+    outline: 2px dashed blue;
+    margin-bottom: 40px;
+    display: block;
   }
 
   .form__fieldset--color {
     padding-bottom: 100px;
+    outline: 2px
   }
 
   .form__fieldset--extra {
     margin-bottom: 60px;
   }
+
+  .form__items {
+    margin-left: 175px;
+    width: 875px;
+    outline: 2px dashed aqua;
+  }
+
+  .form__item {
+    min-width: 262px;
+
+  }
+
 }
