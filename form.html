@@ -31,7 +31,7 @@
                   <a href="form.html" class="main-nav__link">Распродажа</a>
                 </li>
               </ul>
-              <ul class="main-nav__list--user">
+              <ul class="main-nav__list  main-nav__list--user">
                 <li class="main-nav__item  main-nav__item--search">
                   <a href="#" class="main-nav__link">Поиск по сайту</a>
                 </li>
@@ -58,39 +58,41 @@
               свяжемся с вами, чтобы уточнить детали.</p>
             <fieldset class="form__fieldset  form__fieldset--type">
               <legend class="form__title">ТИП</legend>
-              <div class="form__item">
-                <input type="radio" class="form__input form__input--radio" name="popular" id="accessory">
-                <label for="accessory" class="type__label">Аксессуар для интерьера</label>
-              </div>
-              <div class="form__item">
-                <input type="radio" class="form__input form__input--radio" name="popular" id="toy">
-                <label for="toy" class="type__label">Детская игрушка</label>
+              <div class="form__items">
+                <div class="form__item">
+                  <input type="radio" class="form__input form__input--radio" name="popular" id="accessory">
+                  <label for="accessory" class="type__label">Аксессуар для интерьера</label>
+                </div>
+                <div class="form__item">
+                  <input type="radio" class="form__input form__input--radio" name="popular" id="toy">
+                  <label for="toy" class="type__label">Детская игрушка</label>
+                </div>
               </div>
             </fieldset>
             <fieldset class="form__fieldset  form__fieldset--color">
               <legend class="color__title">ЦВЕТ</legend>
               <div class="form__items">
-                <div class="form__item">
+                <div class="form__item form__item--color">
                   <input type="checkbox" class="form__input form__input--checkbox" name="white" id="white">
                   <label for="white" class="form__label">Белый</label>
                 </div>
-                <div class="form__item">
+                <div class="form__item form__item--color">
                   <input type="checkbox" class="form__input form__input--checkbox" name="grey" id="grey">
                   <label for="grey" class="form__label">Серый</label>
                 </div>
-                <div class="form__item">
+                <div class="form__item  form__item--color">
                   <input type="checkbox" class="form__input form__input--checkbox" name="tiffany" id="tiffany">
                   <label for="tiffany" class="form__label">«Тиффани»</label>
                 </div>
-                <div class="form__item">
+                <div class="form__item  form__item--color">
                   <input type="checkbox" class="form__input form__input--checkbox" name="black" id="black">
                   <label for="black" class="form__label">Черный</label>
                 </div>
-                <div class="form__item">
+                <div class="form__item  form__item--color">
                   <input type="checkbox" class="form__input form__input--checkbox" name="pink" id="pink">
                   <label for="pink" class="form__label">Розовый</label>
                 </div>
-                <div class="form__item">
+                <div class="form__item  form__item--color">
                   <input type="checkbox" class="form__input form__input--checkbox" name="orange" id="orange">
                   <label for="orange" class="form__label">Оранжевый</label>
                 </div>
@@ -113,22 +115,22 @@
               </div>
             </fieldset>
             <fieldset class="form__fieldset  form__fieldset--phone">
+              <legend class="form__title">ТЕЛ</legend>
               <div class="form__item">
-                <legend class="form__title">ТЕЛ</legend>
-                <input type="tel" class="form__input  form__input--tel" name="phone" id="phone" placeholder="+7 ХХХ ХХ ХХ"
-                       required>
+                <input type="tel" class="form__input  form__input--tel" name="phone" id="phone" placeholder="+7 ХХХ ХХ ХХ" required>
               </div>
             </fieldset>
             <fieldset class="form__fieldset  form__fieldset--mail">
-              <div class="form__item">
-                <legend class="form__title">E-MAIL</legend>
-                <input type="email" class="form__input form__input--mail" name="mail" id="mail" placeholder="Ваш Email"
-                       required>
+              <legend class="form__title">E-MAIL</legend>
+               <div class="form__item">
+                <input type="email" class="form__input form__input--mail" name="mail" id="mail" placeholder="Ваш Email" required>
               </div>
             </fieldset>
             <fieldset class="form__fieldset  form__fieldset--extra">
               <legend class="form__title">ДОП</legend>
-              <textarea class="form__textarea" name="comment">Опишите подробно все свои восторги </textarea>
+              <div class="form__item">
+                <textarea class="form__textarea" name="comment">Опишите подробно все свои восторги </textarea>
+              </div>
             </fieldset>
             <p class="form__submessage">Все поля обязательны для заполнения</p>
             <input type="submit" class="btn btn--form" value="ОТПРАВИТЬ ЗАКАЗ">
