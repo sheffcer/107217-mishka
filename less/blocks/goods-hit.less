@@ -1,0 +1,156 @@
+.goods-hit {
+  font-family: "Open Sans", "Arial", sans-serif;
+//  min-height: 820px;
+}
+
+
+.goods-hit__inner {
+  .container();
+  outline: 2px dashed blue;
+  margin-top: -10px;
+  padding-bottom: 50px;
+//  padding-bottom: 830px;
+}
+
+.goods-hit__title {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  outline: 1px dotted black;
+ }
+
+.goods-hit__subtitle {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 16px;
+  color: #63d1bb;
+  text-transform: uppercase;
+  outline: 1px dotted black;
+}
+
+.goods-hit__description {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: #333333;
+  outline: 1px dotted black;
+}
+
+.goods-hit__characteristic {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.goods-hit__table {
+  width: 260px;
+  min-height: 115px;
+  margin-bottom: 20px;
+  outline: 1px dotted green;
+}
+
+.goods-hit__img {
+  margin-bottom: 15px;
+  outline: 1px dotted red;
+}
+
+.goods-hit__price {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  color: #333333;
+  margin: 0 25%;
+  margin-bottom: 30px;
+  outline: 1px dotted green;
+}
+
+
+
+
+@media @tablet-widths {
+  .goods-hit {
+//    min-height: 630px;
+  }
+
+  .goods-hit__main-content {
+    position: relative;
+  }
+
+  .goods-hit__inner {
+    margin-top: 3px;
+//    padding-bottom: 625px;
+    padding-bottom: 70px;
+  }
+
+  .goods-hit__main-titles {
+    .clearfix();
+  }
+
+  .goods-hit__main-content {
+    width: 290px;
+  }
+
+  .goods-hit__title {
+    float: left;
+    font-family: "Open Sans Bold", "Arial", sans-serif;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .goods-hit__description {
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .goods-hit__subtitle {
+    float: right;
+  }
+
+  .goods-hit__table {
+    margin-bottom: 90px;
+  }
+
+  .goods-hit__img {
+    position: absolute;
+    left: 200px;
+    top: 10px;
+  }
+
+
+}
+
+@media @desktop-widths {
+  .goods-hit {
+    min-width: 805px;
+  }
+
+  .goods-hit__inner {
+    margin-top: 3px;
+    position: relative;
+//    padding-bottom: 805px;
+  }
+
+  .goods-hit__title {
+    margin-top: 120px;
+    margin-left: 170px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .goods-hit__subtitle {
+    position: absolute;
+    top: 120px;
+    left: 30px;
+  }
+
+  .goods-hit__main-content {
+    margin-left: 170px;
+  }
+
+  .goods-hit__table {
+    margin-bottom: 130px;
+  }
+}
+

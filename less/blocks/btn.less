@@ -1,0 +1,62 @@
+.btn {
+  width: 260px;
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 16px;
+  text-align: center;
+  color: #333333;
+  padding: 16px 0;
+  border: 2px solid #333333;
+
+  &--reviews {
+    margin-top: 30px;
+  }
+
+  &--location {
+    width: 229px;
+    margin: 0 auto;;
+  }
+
+  &--production-info {
+    width: 190px;
+  }
+}
+
+@media @tablet-widths {
+  .btn {
+    &--reviews {
+    position: absolute;
+    top: 30px;
+    left: 480px;
+    width: 170px;
+    }
+
+    &--production-info {
+      width: 585px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .btn {
+    &--reviews {
+    position: absolute;
+    top: 40px;
+    left: 880px;
+    width: 170px;
+    }
+
+    &--location {
+      position: absolute;
+      top: 560px;
+      left: 225px;
+    }
+
+    &--production-info {
+      width: 228px;
+    }
+  }
+}

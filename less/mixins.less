@@ -1,7 +1,23 @@
 .clearfix() {
- &::after {
- content: "";
- display: table;
- clear: both;
+  &::after {
+  content: "";
+  display: table;
+  clear: both;
  }
 }
+
+.container() {
+  width: 260px;
+  margin: 0 auto;
+  outline: 1px dotted aqua;
+
+  @media @tablet-widths {
+    width: 668px;
+  }
+
+  @media @desktop-widths {
+    width: 1050px;
+  }
+
+}
+

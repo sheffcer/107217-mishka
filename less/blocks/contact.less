@@ -1,0 +1,81 @@
+.contact {
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #000000;
+}
+
+.contact__title {
+  display: block;
+  padding-top: 20px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.contact__mail {
+  padding-top: 10px;
+  font-size: 15px;
+  color: #333333;
+  outline: 1px dotted blue;
+}
+
+.contact__adress {
+  padding-top: 40px;
+  font-size: 15px;
+  line-height: 30px;
+  color: #333333;
+  outline: 1px dotted red;
+}
+
+.contact__adress span {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 30px;
+}
+
+@media @tablet-widths {
+  .contact__title {
+    padding-top: 90px;
+    font-size: 43px;
+    line-height: 50px;
+    font-weight: bold;
+  }
+
+  .contact__mail {
+    margin-right: 70px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 17px;
+  }
+
+  .contact__adress {
+    margin-top: -35px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 17px;
+  }
+}
+
+@media @desktop-widths {
+  .contact {
+    float: left;
+    width: 350px;
+    margin-left: 175px;
+    margin-top: 80px;
+  }
+
+  .contact__title {
+    font-size: 53px;
+    line-height: 53px;
+  }
+
+  .contact__mail {
+    display: block;
+  }
+
+  .contact__adress {
+    display: block;
+  }
+}
+
+
+

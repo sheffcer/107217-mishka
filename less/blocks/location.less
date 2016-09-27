@@ -1,0 +1,39 @@
+.location {
+}
+
+.location__inner {
+  position: relative;
+  .container();
+  outline: 2px dashed green;
+}
+
+.location__map  {
+//  background: url("../img/map-mobile@1x.jpg") no-repeat center top;
+  width: 320px;
+  margin-left: -30px;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  outline: 1px dotted black;
+}
+
+@media @tablet-widths {
+  .location__map {
+    margin-top: 25px;
+    width: 768px;
+    margin-left: -50px;
+  }
+}
+
+@media @desktop-widths {
+  .location__inner {
+    .clearfix();
+  }
+
+  .location__map {
+    float: right;
+    width: 525px;
+    margin-top: 150px;
+
+  }
+}
+

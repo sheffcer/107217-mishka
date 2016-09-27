@@ -1,9 +1,118 @@
 .features {
-  outline: 1px dashed red;
+  min-height: 840px;
+}
 
-  &__list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+.features__inner {
+  .container();
+  outline: 2px dashed green;
+}
+
+.features__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 40px;
+}
+
+.features__item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-top: 50px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: bold;
+  outline: 1px dotted red;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 43px;
+    left: 0;
+    width: 60px;
+    height: 45px;
   }
+
+  &--ecology::before {
+    background: url("/img/icon-feature-1.svg") no-repeat;
+  }
+
+  &--scandinavia::before {
+    background: url("/img/icon-feature-3.svg") no-repeat;
+  }
+
+  &--like::before {
+    background: url("/img/icon-feature-5.svg") no-repeat;
+  }
+
+  &--love::before {
+    background: url("/img/icon-feature-2.svg") no-repeat;
+  }
+
+  &--manufacture::before {
+    background: url("/img/icon-feature-4.svg") no-repeat;
+  }
+
+  &--gift::before {
+    background: url("/img/icon-feature-6.svg") no-repeat;
+  }
+}
+
+
+@media @tablet-widths {
+  .features {
+  }
+
+  .features__inner {
+    .clearfix();
+  }
+
+  .features__list {
+    display: block;
+    margin-top: 90px;
+    .clearfix();
+  }
+
+  .features__column {
+    float: left;
+  }
+
+  .features__item {
+    width: 300px;
+    margin-bottom: 70px;
+    margin-right: 20px;
+    padding-bottom: 10px;
+  }
+}
+
+@media @desktop-widths {
+  .features {
+    min-height: 645px;
+  }
+
+  .features__inner {
+    padding-bottom: 100px;
+   }
+
+  .features__item {
+    margin-top: 65px;
+    width: 330px;
+    margin-right: 20px;
+    padding-bottom: 35px;
+    margin-bottom: -20px;
+
+    &::before {
+    content: "";
+    position: absolute;
+    bottom: 55px;
+    left: 10px;
+    width: 60px;
+    height: 45px;
+    }
+  }
+
+  .features__list {
+    width: 700px;
+    margin: 0 auto;
+  }
+
 }
