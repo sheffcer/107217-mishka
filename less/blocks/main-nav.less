@@ -1,6 +1,9 @@
 .main-nav {
-    margin-top: -15px;
-//  min-height: 316px;
+  margin-top: -15px;
+
+  &--second {
+    display: none;
+  }
 }
 
 .main-nav__inner {
@@ -11,9 +14,6 @@
 }
 
 .main-nav__list {
-//  width: 320px;
-//  direction: flex;
-//  flex-direction: column;
   list-style: none;
   outline: 2px dashed green;
 }
@@ -34,15 +34,15 @@
   text-decoration: none;
 }
 
-.main-nav__item:nth-child(n+3) {
-  display: none;
-}
+//.main-nav__item:nth-child(n+3) {
+//  display: none;
+//}
 
-.main-nav__list--user {
+/*main-nav__list--user {
 //  direction: flex;
 //  flex-direction: column;
   list-style: none;
-}
+}*/
 
 @media @tablet-widths {
 //  .main-nav {
@@ -58,38 +58,42 @@
 //    padding: 0;
 //  }
 
-    .main-nav {
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-      align-items: ;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
+.main-nav {
+  margin: 0;
+  position: relative;
+
+  &--first {
+    order: 3;
+  }
+
+  &--fird {
+    order: 2;
+  }
+}
 
   .main-nav__item {
     width: 165px;
 //    margin-right: 20px;
-    margin-right: auto;
+//    margin-right: auto;
   }
 
 
   .main-nav__list {
-    margin-top: -25px;
+//    margin-top: -25px;
     display: flex;
     flex-direction: row;
     width: 300px;
-    order: 2;
+//    order: 2;
   }
 
-  .main-nav__list--user {
-//    margin: 0;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    width: 300px;
-    order: 1;
-  }
+//  .main-nav__list--fird {
+////    margin: 0;
+//    margin-top: 30px;
+//    display: flex;
+//    flex-direction: row;
+//    width: 300px;
+//    order: 1;
+//  }
 
 //  .main-nav__item {
 //    display: inline-block;
@@ -100,10 +104,20 @@
 
 @media @desktop-widths {
   .main-nav {
-//    min-height: 116px;
-    left: 0;
-    margin: 0;
-    padding: 0;
+    &--first {
+      display: block;
+      order: 1;
+    }
+
+    &--second {
+      display: block;
+      order: 4;
+    }
+
+    &--fird {
+      display: block;
+      order: 3;
+    }
   }
 
 //  .main-nav__user-list {
@@ -114,11 +128,8 @@
   display: inline-block;
   }
 
-  .main-nav__list {
-    margin-top: 20px;
-
-    &--user {
-      margin: 0;
-    }
-  }
+//  .main-nav__list {
+//    margin-top: 20px;
+//
+//  }
 }
