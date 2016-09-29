@@ -7,6 +7,13 @@
   outline: 2px dashed green;
 }
 
+.fearures__title {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+}
+
 .features__list {
   padding: 0;
   margin: 0;
@@ -18,9 +25,10 @@
   position: relative;
   margin-bottom: 40px;
   padding-top: 50px;
-  font-size: 16px;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-size: 17px;
   line-height: 16px;
-  font-weight: bold;
+  color: #000000;
   outline: 1px dotted red;
 
   &::before {
@@ -34,6 +42,9 @@
 
   &--ecology::before {
     background: url("/img/icon-feature-1.svg") no-repeat;
+    position: absolute;
+    left: 8px;
+    top: -8px;
   }
 
   &--scandinavia::before {
@@ -42,18 +53,30 @@
 
   &--like::before {
     background: url("/img/icon-feature-5.svg") no-repeat;
+    position: absolute;
+    left: 7px;
+    top: 0;
   }
 
   &--love::before {
     background: url("/img/icon-feature-2.svg") no-repeat;
+    position: absolute;
+    left: 3px;
+    top: 0;
   }
 
   &--manufacture::before {
     background: url("/img/icon-feature-4.svg") no-repeat;
+    position: absolute;
+    left: -5px;
+    top: -2px;
   }
 
   &--gift::before {
     background: url("/img/icon-feature-6.svg") no-repeat;
+    position: absolute;
+    left: 3px;
+    top: -2px;
   }
 }
 

@@ -11,16 +11,27 @@
 }
 
 .page-footer__link {
-  font-family: "Open Sans", "Arial", sans-serif;
+  position: relative;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 19px;
-  line-height: 19px;
-  font-weight: bold;
+  line-height: 18px;
   color: #000000;
   text-decoration: none;
+
+  &--academy::after {
+    position: absolute;
+    content: "";
+    top: -2px;
+    left: 160px;
+    width: 27px;
+    height: 34px;
+    background-image: url("../img/logo-htmlacademy.svg");
+  }
 }
 
+
 .page-footer__copyright {
-  margin-top: 25px;
+  margin-top: 45px;
   width: 160px;
   margin-left: 35px;
   outline: 1px solid red;

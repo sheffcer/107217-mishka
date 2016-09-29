@@ -54,12 +54,12 @@
         </div>
       </div>
       <div class="goods-categories">
-        <div class="goods-categories__inner">
+<!--        <div class="goods-categories__inner">-->
           <ul class="goods-categories__list">
-            <li class="goods-categories__item"><a href="#" class="goods-categories__link">Предметы<br> интерьера</a></li>
-            <li class="goods-categories__item"><a href="#" class="goods-categories__link">Детские<br> игрушки</a></li>
+            <li class="goods-categories__item"><a href="#" class="goods-categories__link  goods-categories__link--interior">Предметы<br> интерьера</a></li>
+            <li class="goods-categories__item"><a href="#" class="goods-categories__link  goods-categories__link--toy">Детские<br> игрушки</a></li>
           </ul>
-        </div>
+<!--        </div>-->
       </div>
       <div class="goods-hit">
         <div class="goods-hit__inner">
@@ -72,16 +72,16 @@
               расцветках, и трех размерах.</p>
             <table class="goods-hit__table">
               <tr class="goods-hit__characteristic">
-                <td>Цвет:</td>
-                <td>«Тиффани»/серый</td>
+                <td class="goods-hit__left">Цвет:</td>
+                <td class="goods-hit__right">«Тиффани»/серый</td>
               </tr>
               <tr class="goods-hit__characteristic">
-                <td>Диаметр:</td>
-                <td>25см</td>
+                <td class="goods-hit__left">Диаметр:</td>
+                <td class="goods-hit__right">25см</td>
               </tr>
               <tr class="goods-hit__characteristic">
-                <td>Высота:</td>
-                <td>15см</td>
+                <td class="goods-hit__left">Высота:</td>
+                <td class="goods-hit__right">15см</td>
               </tr>
             </table>
             <div class="goods-hit__img">
@@ -164,7 +164,9 @@
           <a href="#" class="social-link  social-link--twitter">Twitter</a>
         </div>
         <div class="page-footer__copyright">
-          <a href="" class="page-footer__link">Разработано<img src="img/logo-htmlacademy.svg" alt="HTMLAcademy" width="27" height="34"></a>
+          <a href="" class="page-footer__link  page-footer__link--academy">Разработано
+<!--          <img src="img/logo-htmlacademy.svg" alt="HTMLAcademy" width="27" height="34">-->
+          </a>
         </div>
       </div>
     </footer>
@@ -207,7 +209,7 @@
           navMain3.classList.add('main-nav--opened');
         } else {
           navMain3.classList.add('main-nav--closed');
-          navMain1.classList.remove('main-nav--opened');
+          navMain3.classList.remove('main-nav--opened');
         }
       });
     </script>
