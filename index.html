@@ -13,8 +13,8 @@
         <div class="logo">
          <a href="#" class="logo__link"><img src="img/logo-mobile.svg" alt="mishka"></a>
         </div>
-        <button class="main-nav__toggle main-nav__toggle--closed" type="button">X</button>
-        <nav class="main-nav  main-nav--first">
+        <nav class="main-nav  main-nav--first  main-nav--closed  main-nav--nojs">
+          <button class="main-nav__toggle" type="button"></button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
@@ -34,13 +34,13 @@
             </li>
           </ul>
         </nav>
-        <nav class="main-nav main-nav--fird">
+        <nav class="main-nav main-nav--fird main-nav--closed  main-nav--nojs">
           <ul class="main-nav__list">
             <li class="main-nav__item  main-nav__item--search">
-              <a href="#" class="main-nav__link">Поиск по сайту</a>
+              <a href="#" class="main-nav__link  main-nav__link--search">Поиск по сайту</a>
             </li>
             <li class="main-nav__item  main-nav__item--cart">
-            <a href="#" class="main-nav__link">Корзина: пока пуста</a>
+            <a href="#" class="main-nav__link  main-nav__link--cart">Корзина: пока пуста</a>
             </li>
         </ul>
         </nav>
@@ -183,5 +183,33 @@
         </fieldset>
       </div>
     </form>
+    <script>
+      var navMain1 = document.querySelector('.main-nav--first');
+      var navMain3 = document.querySelector('.main-nav--fird');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain1.classList.remove('main-nav--nojs');
+      navMain3.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain1.classList.contains('main-nav--closed')) {
+          navMain1.classList.remove('main-nav--closed');
+          navMain1.classList.add('main-nav--opened');
+        } else {
+          navMain1.classList.add('main-nav--closed');
+          navMain1.classList.remove('main-nav--opened');
+        }
+      });
+
+      navToggle.addEventListener('click', function() {
+        if (navMain3.classList.contains('main-nav--closed')) {
+          navMain3.classList.remove('main-nav--closed');
+          navMain3.classList.add('main-nav--opened');
+        } else {
+          navMain3.classList.add('main-nav--closed');
+          navMain1.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>
