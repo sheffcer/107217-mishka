@@ -18,10 +18,6 @@
     padding-top: 2px;
     height: 89px;
   }
-//
-//  .page-header__logo {
-//    order: 0;
-//  }
 
   .page-header__inner {
     position: relative;
@@ -34,17 +30,25 @@
   }
 
   .page-header__delivery {
-    margin-top: -25px;
     display: block;
-    width: 250px;
-//    position: absolute;
-//    left: 420px;
+    margin-top: -12px;
+    margin-left: -25px;
+    display: block;
+//    width: 250px;
     outline: 2px dashed red;
     order: 4;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    color: #333333;
    }
 }
 
 @media @desktop-widths {
+  .page-header {
+    min-height: 88px;
+  }
+
   .page-header__inner {
     position: relative;
     padding-top: 2px;
