@@ -89,9 +89,16 @@
     .clearfix();
   }
 
+  .fearures__title {
+    display: block;
+    padding-top: 10px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
   .features__list {
     display: block;
-    margin-top: 90px;
+    margin-top: 60px;
     .clearfix();
   }
 
@@ -101,10 +108,38 @@
 
   .features__item {
     width: 300px;
-    margin-bottom: 70px;
-    margin-right: 20px;
+    margin-bottom: 55px;
+    margin-right: 33px;
     padding-bottom: 10px;
-  }
+    font-size: 20px;
+    line-height: 19px;
+
+    &--ecology::before {
+     top: -10px;
+    }
+
+    &--scandinavia::before {
+      top: -8px;
+    }
+
+    &--like::before {
+      left: 8px;
+    }
+
+    &--love::before {
+      top: -6px;
+      left: 5px;
+    }
+
+    &--manufacture::before {
+      top: -4px;
+    }
+
+    &--gift::before {
+      top: -4px;
+      left: 4px;
+    }
+    }
 }
 
 @media @desktop-widths {

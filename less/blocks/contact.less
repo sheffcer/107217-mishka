@@ -5,17 +5,21 @@
 
 .contact__title {
   display: block;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   padding-top: 20px;
   font-size: 18px;
   line-height: 30px;
-  font-weight: bold;
 }
 
 .contact__mail {
   padding-top: 5px;
-  font-size: 15px;
-  color: #333333;
   outline: 1px dotted blue;
+}
+
+.contact__mail span {
+  font-size: 15px;
+  line-height: 30px;
+  color: #333333;
 }
 
 .contact__mail a {
@@ -29,6 +33,7 @@
 
 .contact__adress {
   padding-top: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
   color: #333333;
@@ -46,21 +51,39 @@
     padding-top: 90px;
     font-size: 43px;
     line-height: 50px;
-    font-weight: bold;
   }
 
   .contact__mail {
-    margin-right: 70px;
+    margin-top: 5px;
+    margin-right: 45px;
     display: inline-block;
     vertical-align: top;
+  }
+
+  .contact__mail span {
+    font-size: 17px;
+    margin-right: -5px;
+  }
+
+  .contact__mail a {
     font-size: 17px;
   }
 
   .contact__adress {
-    margin-top: -35px;
+    margin-top: -22px;
     display: inline-block;
     vertical-align: top;
     font-size: 17px;
+    width: 334px;
+  }
+
+  .contact__adress br {
+    display: none;
+  }
+
+  .contact__adress span:nth-child(2) {
+    width: 185px;
+    margin-left: -3px;
   }
 }
 
