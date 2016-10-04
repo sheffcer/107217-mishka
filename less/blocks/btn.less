@@ -12,30 +12,49 @@
   border: 2px solid #333333;
 
   &--reviews {
-    margin-top: 30px;
+    margin-top: 38px;
   }
 
   &--location {
-    width: 229px;
-    margin: 0 auto;;
+    width: 260px;
+    margin: 0 auto;
   }
 
   &--production-info {
     width: 190px;
+    margin: 0 auto;
   }
 }
 
 @media @tablet-widths {
   .btn {
     &--reviews {
-    position: absolute;
-    top: 30px;
-    left: 480px;
-    width: 170px;
+      position: absolute;
+      top: 27px;
+      left: 495px;
+      width: 170px;
+      font-size: 18px;
+      line-height: 16px;
     }
 
     &--production-info {
       width: 585px;
+    }
+
+    &--goods-hit {
+      width: 290px;
+    }
+
+    &--location {
+      display: block;
+      width: 230px;
+      margin-top: 50px;
+    }
+
+    &--form {
+      order: 1;
+      margin-right: 130px;
+      width: 230px;
     }
   }
 }
@@ -44,19 +63,29 @@
   .btn {
     &--reviews {
     position: absolute;
-    top: 40px;
-    left: 880px;
+    top: 30px;
+    left: 875px;
     width: 170px;
     }
 
     &--location {
       position: absolute;
-      top: 560px;
-      left: 225px;
+      top: 510px;
+      left: 174px;
+      width: 229px;
     }
 
     &--production-info {
       width: 228px;
+    }
+
+    &--goods-hit {
+      width: 290px;
+    }
+
+    &--form {
+      margin-left: 175px;
+      margin-right: 130px;
     }
   }
 }

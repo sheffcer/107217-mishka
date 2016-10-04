@@ -1,11 +1,11 @@
 .logo {
-  min-height: 79px;
+//  min-height: 79px;
   display: block;
   width: 86px;
   height: 35px;
   margin: 0 auto;
   padding-top: 20px;
-  outline: 1px solid red;
+//  outline: 1px solid red;
 
   &--footer {
     display: none;
@@ -25,31 +25,35 @@
     margin: 0;
     width: 113px;
     height: 46px;
+    order: 0;
 
     &--footer {
       display: block;
       float: left;
-      margin-right: 130px;
-      margin-top: 20px;
+      margin-right: 145px;
+      margin-top: 35px;
     }
   }
 }
 
 @media @desktop-widths {
   .logo {
-    margin: 0;
-    padding: 0;
+//    margin: 0;
+//    padding: 0;
     width: 149px;
     height: 72px;
-    position: absolute;
-    left: 450px;
-    top: 10px;
+    order: 2;
+
+//    position: absolute;
+//    left: 450px;
+//    top: 10px;
 
     &--footer {
       display: block;
       float: left;
-      margin-right: 130px;
-      margin-top: 20px;
+//      margin-left: 20px;
+      margin-right: 300px;
+      margin-top: 40px;
       position: static;
     }
   }

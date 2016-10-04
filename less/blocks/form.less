@@ -11,17 +11,25 @@
   outline: 1px dotted red;
 }
 
+.form__title {
+  margin-right: 135px;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 16px;
+  color: #63d1bb;
+}
+
 .form__description {
+  margin-top: -10px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #333333;
   outline: 2px dashed blue;
-  margin-bottom: 20px;
 }
 
 .form__fieldset--type {
-  padding-bottom: 80px;
+  padding-bottom: 90px;
   outline: 2px dashed blue;
   margin-bottom: 20px;
 }
@@ -34,13 +42,13 @@
 }
 
 .form__fieldset--personal {
-  padding-bottom: 130px;
+  padding-bottom: 140px;
   outline: 2px dashed blue;
   margin-bottom: 30px;
 }
 
 .form__fieldset--phone {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   outline: 2px dashed blue;
   margin-bottom: 40px;
 }
@@ -61,31 +69,63 @@
 }
 
 @media @tablet-widths {
+  .form {
+    margin-bottom: -10px;
+  }
+
   .form__description {
+    margin-top: 85px;
     font-size: 17px;
     line-height: 30px;
     padding-bottom: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
+  }
+
+
+  .form__flex {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form__fieldset--type {
+    padding-bottom: 60px;
+    margin-bottom: 35px;
   }
 
   .form__fieldset--color {
-    padding-bottom: 160px;
+    padding-bottom: 150px;
+  }
+
+  .form__item--color {
+    display: inline-block;
   }
 
   .form__fieldset--personal {
-    padding-bottom: 180px;
+    padding-bottom: 130px;
+    margin-bottom: 20px;
   }
 
-  .form__items {
-    margin-left: 167px;
-    width: 500px;
+  .form__fieldset--phone {
+    padding-bottom: 70px;
+    margin-bottom: 30px;
+  }
+
+  .form__fieldset--mail {
+    padding-bottom: 70px;
+    padding-bottom: 30px;
+  }
+
+  .form__fieldset--extra {
+    padding-bottom: 150px;
+    margin-bottom: 45px;
+  }
+
+  .form__fieldset--color .form__items {
     outline: 2px dashed aqua;
   }
 
   .form__item {
-    margin-left: 167px;
     width: 200px;
-    display: inline-block;
     vertical-align: top;
     outline: 2px dashed green;
 
@@ -94,27 +134,40 @@
       margin: 0;
     }
   }
+
+  .form__submessage {
+    order: 2;
+  }
 }
 
 @media @desktop-widths {
   .form__description {
-    margin-bottom: 60px;
+    margin-top: 140px;
+    margin-bottom: 30px;
   }
 
   .form__fieldset--type {
-    padding-bottom: 60px;
+    padding-bottom: 120px;
     outline: 2px dashed blue;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     display: block;
   }
 
   .form__fieldset--color {
-    padding-bottom: 100px;
-    outline: 2px
+    padding-bottom: 130px;
+    outline: 2px dashed blue;
+  }
+
+  .form__fieldset--personal {
+    margin-bottom: 40px;
+  }
+
+  form__fieldset--mail {
+    padding-bottom: 20px;
   }
 
   .form__fieldset--extra {
-    margin-bottom: 60px;
+    margin-bottom: 85px;
   }
 
   .form__items {

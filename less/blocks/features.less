@@ -7,6 +7,13 @@
   outline: 2px dashed green;
 }
 
+.fearures__title {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+}
+
 .features__list {
   padding: 0;
   margin: 0;
@@ -18,9 +25,10 @@
   position: relative;
   margin-bottom: 40px;
   padding-top: 50px;
-  font-size: 16px;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-size: 17px;
   line-height: 16px;
-  font-weight: bold;
+  color: #000000;
   outline: 1px dotted red;
 
   &::before {
@@ -34,6 +42,9 @@
 
   &--ecology::before {
     background: url("/img/icon-feature-1.svg") no-repeat;
+    position: absolute;
+    left: 8px;
+    top: -8px;
   }
 
   &--scandinavia::before {
@@ -42,18 +53,30 @@
 
   &--like::before {
     background: url("/img/icon-feature-5.svg") no-repeat;
+    position: absolute;
+    left: 7px;
+    top: 0;
   }
 
   &--love::before {
     background: url("/img/icon-feature-2.svg") no-repeat;
+    position: absolute;
+    left: 3px;
+    top: 0;
   }
 
   &--manufacture::before {
     background: url("/img/icon-feature-4.svg") no-repeat;
+    position: absolute;
+    left: -5px;
+    top: -2px;
   }
 
   &--gift::before {
     background: url("/img/icon-feature-6.svg") no-repeat;
+    position: absolute;
+    left: 3px;
+    top: -2px;
   }
 }
 
@@ -66,9 +89,16 @@
     .clearfix();
   }
 
+  .fearures__title {
+    display: block;
+    padding-top: 10px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
   .features__list {
     display: block;
-    margin-top: 90px;
+    margin-top: 60px;
     .clearfix();
   }
 
@@ -78,9 +108,37 @@
 
   .features__item {
     width: 300px;
-    margin-bottom: 70px;
-    margin-right: 20px;
+    margin-bottom: 55px;
+    margin-right: 33px;
     padding-bottom: 10px;
+    font-size: 20px;
+    line-height: 19px;
+
+    &--ecology::before {
+     top: -10px;
+    }
+
+    &--scandinavia::before {
+      top: -8px;
+    }
+
+    &--like::before {
+      left: 8px;
+    }
+
+    &--love::before {
+      top: -6px;
+      left: 5px;
+    }
+
+    &--manufacture::before {
+      top: -4px;
+    }
+
+    &--gift::before {
+      top: -4px;
+      left: 4px;
+    }
   }
 }
 
@@ -90,29 +148,30 @@
   }
 
   .features__inner {
-    padding-bottom: 100px;
+    padding-bottom: 90px;
    }
 
   .features__item {
     margin-top: 65px;
     width: 330px;
     margin-right: 20px;
-    padding-bottom: 35px;
+    padding-bottom: 20px;
     margin-bottom: -20px;
-
-    &::before {
-    content: "";
-    position: absolute;
-    bottom: 55px;
-    left: 10px;
-    width: 60px;
-    height: 45px;
-    }
+    line-height: 20px;
   }
 
   .features__list {
+    padding-top: -260px;
     width: 700px;
     margin: 0 auto;
+  }
+
+  .fearures__title {
+    margin-left: 170px;
+    padding-top: 50px;
+    margin-bottom: -10px;
+    font-size: 53px;
+    line-height: 57px;
   }
 
 }
