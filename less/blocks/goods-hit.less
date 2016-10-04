@@ -42,7 +42,7 @@
   outline: 1px dotted black;
 }
 
-.goods-hit__characteristic {
+.goods-hit__row {
   height: 40px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
@@ -51,15 +51,28 @@
   border-bottom: 1px solid #ececec;
 }
 
-.goods-hit__left {
-  width: 95px;
-  border-bottom: 1px solid #ececec
+.goods-hit__column {
+  &--left {
+    width: 95px;
+    border-bottom: 1px solid #ececec;
+  }
+
+  &--right {
+    width: 165px;
+    border-bottom: 1px solid #ececec;
+  }
 }
 
-.goods-hit__right {
-  width: 165px;
-  border-bottom: 1px solid #ececec
-}
+//.goods-hit__left {
+//  width: 95px;
+//  border-bottom: 1px solid #ececec;
+//}
+
+//.goods-hit__right {
+//  width: 165px;
+//  border-bottom: 1px solid #ececec;
+//}
+
 
 .goods-hit__table {
   width: 260px;
@@ -110,9 +123,17 @@
     width: 290px;
   }
 
-  .goods-hit__left {
+  .goods-hit__column {
+
+  &--left {
     width: 85px;
+    border-bottom: 1px solid #ececec;
   }
+}
+
+//  .goods-hit__left {
+//    width: 85px;
+//  }
 
   .goods-hit__title {
     float: left;
@@ -136,7 +157,7 @@
     text-align: center;
   }
 
-  .goods-hit__characteristic {
+  .goods-hit__row {
     height: 38px;
   }
 
@@ -195,7 +216,7 @@
     margin-bottom: 110px;
   }
 
-  .goods-hit__characteristic {
+  .goods-hit__row {
     height: 38px;
   }
 
