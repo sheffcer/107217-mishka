@@ -93,7 +93,11 @@
               </tr>
             </table>
             <div class="goods-hit__img">
-              <img src="/img/triple-set-mobile@1x.jpg" alt="" class="goods-hit__img" width="260" height="316">
+              <picture>
+               <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+               <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+                <img src="/img/triple-set-mobile@1x.jpg" alt="baskets" class="goods-hit__img">
+              </picture>
             </div>
             <p class="goods-hit__price">Цена: 990 руб.</p>
             <a href="#" class="btn  btn--goods-hit">ЗАКАЗАТЬ</a>
