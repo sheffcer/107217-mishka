@@ -6,7 +6,7 @@
 .reviews__inner {
   .container();
   outline: 2px dashed blue;
-//  padding-bottom: 150px;
+  //  padding-bottom: 150px;
 }
 
 .reviews__nav {
@@ -82,12 +82,32 @@
 
 @media @tablet-widths {
   .reviews {
+    position: relative;
     min-height: 454px;
     margin-top: -260px;
+
+
   }
 
   .reviews__inner {
+    position: relative;
     padding-bottom: 50px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: -10px;
+      left: -50px;
+      width: 350px;
+      height: 457px;
+      background: url("../img/review@1x.jpg");
+      z-index: -1;
+
+      @media @retina {
+        background: url("../img/review@2x.jpg");
+      }
+    }
+
   }
 
   .reviews__title {
@@ -159,6 +179,9 @@
 
   .reviews__inner {
     padding-bottom: 100px;
+    &::after {
+      left: 0;
+    }
   }
 
   .reviews__item {
