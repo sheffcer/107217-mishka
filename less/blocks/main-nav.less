@@ -64,9 +64,18 @@
     }
   }
 
+  .main-nav--order .main-nav__item:nth-child(2) {
+    margin-bottom: -25px;
+  }
+
+  .main-nav--user .main-nav__item:nth-child(2) {
+    margin-bottom: 25px;
+  }
+
   .main-nav__item {
     width: 320px;
     margin: 0;
+//    padding: 0;
     display: block;
     margin-left: -70px;
     border-top: 1px solid #ececec;
@@ -238,6 +247,7 @@
     }
 
     &--trade {
+      z-index: 100;
       display: block;
       order: 4;
     }
