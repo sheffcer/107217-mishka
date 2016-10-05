@@ -1,22 +1,22 @@
 .catalog {
-  margin-top: -28px;
+  margin-top: -26px;
   min-height: 179px;
-  background-color: #f1f1f1;
-  margin-bottom: 30px;
+//  background-color: #f1f1f1;
+  margin-bottom: 26px;
+  border-top: 1px solid #ececec;
 }
 
 .catalog__inner {
   .container();
-  outline: 2px dashed blue;
-  padding-bottom: 65px;
+//  outline: 2px dashed blue;
+  padding-bottom: 35px;
 }
 
 .catalog__title {
-  padding-top: 65px;
+  margin-top: 70px;
   font-family: "Open Sans Bold", sans-serif;
   font-size: 27px;
   line-height: 30px;
-  font-weight: bold;
   color: #000000;
   text-align: center;
 
@@ -26,11 +26,37 @@
     line-height: 30px;
     color: #333333;
   }
-
 }
 
 
 @media @tablet-widths {
+  .catalog {
+    position: relative;
+    margin-top: 6px;
+    min-height: 191px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -15px;
+      width: 110%;
+      height: 24px;
+      background: url("../img/bg-zigzag-fill.svg") repeat-x;
+      transform: rotate(180deg);
+    }
+  }
+
+  .catalog__title {
+  margin-top: 95px;
+    margin-left: 18px;
+  font-family: "Open Sans Bold", sans-serif;
+  font-size: 43px;
+  line-height: 50px;
+  color: #000000;
+  text-align: center;
+  }
+
   .catalog__title--form {
     font-size: 43px;
     line-height: 50px;
