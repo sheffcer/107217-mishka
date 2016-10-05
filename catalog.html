@@ -124,7 +124,11 @@
         <div class="production-info__inner">
           <h2 class="production-info__title">Процесс производства</h2>
           <div class="production-info__video">
-            <img src="img/video-mobile@1x.jpg" alt="production" width="260" height="150">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="production">
+            </picture>
           </div>
           <div class="production-info__content">
             <p class="production-info__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о
