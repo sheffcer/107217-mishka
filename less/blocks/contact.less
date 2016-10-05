@@ -48,9 +48,19 @@
 
 @media @tablet-widths {
   .contact__title {
+    position: relative;
     padding-top: 90px;
     font-size: 43px;
     line-height: 50px;
+    &::after {
+      position: absolute;
+      top: 80px;
+      left: 618px;
+      content: "";
+      width: 51px;
+      height: 85px;
+      background: url("../img/icon-flag.svg") no-repeat;
+    }
   }
 
   .contact__mail {
@@ -100,6 +110,11 @@
     margin-left: -5px;
     font-size: 53px;
     line-height: 53px;
+    &::after {
+      top: 76px;
+      left: -107px;
+    }
+
   }
 
   .contact__mail {
