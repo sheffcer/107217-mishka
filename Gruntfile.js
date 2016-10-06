@@ -14,8 +14,8 @@ module.exports = function(grunt) {
       style: {
         files: {
           // в какой файл, из какого файла
-          "css/style.css": "less/style.less",
-          "css/normalize.css": "less/normalize.less"
+          "build/css/style.css": "less/style.less",
+          "build/css/normalize.css": "less/normalize.less"
         }
       }
     },
@@ -37,18 +37,18 @@ module.exports = function(grunt) {
               })
             ]
           },
-          src: "css/*.css"
+          src: "build/css/*.css"
         }
       },
     // минификация изображений
       imagemin: {
         images: {
           options: {
-            optimizationLevel: 10
+            optimizationLevel: 3
           },
           files: [{
             expand: true,
-            src: ["img/**/*.{png,jpg,gif}"]
+            src: ["build/img/**/*.{png,jpg,gif}"]
           }]
         }
       },
@@ -62,7 +62,7 @@ module.exports = function(grunt) {
         },
         symbols: {
           files: {
-            "img/symbols.svg": ["img/*.svg"]
+            "build/img/symbols.svg": ["img/*.svg"]
           }
         }
       },
@@ -72,7 +72,35 @@ module.exports = function(grunt) {
         symbols: {
           files: [{
             expand: true,
-            src: ["img/*.svg"]
+            src: ["build/img/*.svg"]
+          }]
+        }
+      },
+
+    // очистка билда
+      clean: {
+        build: ["build"]
+      },
+
+    // копирование контента в build
+      copy: {
+        build: {
+          files: [{
+            expand: true,
+            src: [
+              "fonts/**/*.{woff,woff2}",
+              "img/**",
+              "js/**",
+              "*.html"
+            ],
+            dest: "build"
+          }]
+        },
+        html: {
+          files: [{
+            expand: true,
+            src: ["*.html"],
+            dest: "build"
           }]
         }
       },
@@ -100,12 +128,12 @@ module.exports = function(grunt) {
       server: {
         bsFiles: {
           src: [
-            "*.html",
-            "css/*.css"
+            "build/*.html",
+            "build/css/*.css"
           ]
         },
         options: {
-          server: ".",
+          server: "build",
           watchTask: true,
           notify: false,
           open: true,
@@ -116,10 +144,16 @@ module.exports = function(grunt) {
 
     // слежение за файлами
     watch: {
-      files: ["less/**/*.less"],
-      tasks: ["less", "postcss"],
-      options: {
-        spawn: false
+      html: {
+        files: ["*.html"],
+        tasks: ["copy:html"]
+      },
+      style: {
+        files: ["less/**/*.less"],
+        tasks: ["less", "postcss", "csso"],
+        options: {
+          spawn: false
+        }
       }
     },
 
@@ -129,11 +163,10 @@ module.exports = function(grunt) {
           report: "gzip"
         },
         files: {
-          "css/style.min.css": ["css/style.css"]
+          "build/css/style.min.css": ["build/css/style.css"]
         }
       }
     }
-
 
 //    concat: {
 //     options: {
@@ -158,9 +191,13 @@ module.exports = function(grunt) {
   grunt.registerTask("image", "imagemin");
   grunt.registerTask("serve", ["browserSync", "watch"]);
   grunt.registerTask("build", [
+    "clean",
+    "copy",
     "less",
     "postcss",
-    "csso"
+    "csso",
+    "symbols",
+    "imagemin"
 //    "concat",
 //    "uglify"
   ]);
