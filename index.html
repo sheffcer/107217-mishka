@@ -11,7 +11,13 @@
     <header class="page-header">
       <div class="page-header__inner">
         <div class="logo">
-         <a href="#" class="logo__link"><img src="img/logo-mobile.svg" alt="mishka"></a>
+          <a href="#" class="logo__link">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" alt="mishka">
+          </picture>
+          </a>
         </div>
         <nav class="main-nav  main-nav--order  main-nav--closed  main-nav--nojs">
           <button class="main-nav__toggle" type="button"></button>
@@ -40,11 +46,11 @@
               <a href="#" class="main-nav__link  main-nav__link--search">Поиск по сайту</a>
             </li>
             <li class="main-nav__item  main-nav__item--cart">
-            <a href="#" class="main-nav__link  main-nav__link--cart">Корзина: пока пуста</a>
+              <a href="#" class="main-nav__link  main-nav__link--cart">Корзина: пока пуста</a>
             </li>
-        </ul>
+          </ul>
         </nav>
-       <span class="page-header__delivery">Бесплатная доставка по России</span>
+        <span class="page-header__delivery">Бесплатная доставка по России</span>
       </div>
     </header>
     <main>
@@ -54,12 +60,14 @@
         </div>
       </div>
       <div class="goods-categories">
-<!--        <div class="goods-categories__inner">-->
-          <ul class="goods-categories__list">
-            <li class="goods-categories__item"><a href="#" class="goods-categories__link  goods-categories__link--interior">Предметы<br> интерьера</a></li>
-            <li class="goods-categories__item"><a href="#" class="goods-categories__link  goods-categories__link--toy">Детские<br> игрушки</a></li>
-          </ul>
-<!--        </div>-->
+        <!--        <div class="goods-categories__inner">-->
+        <ul class="goods-categories__list">
+          <li class="goods-categories__item"><a href="#" class="goods-categories__link  goods-categories__link--interior">Предметы<br>
+            интерьера</a></li>
+          <li class="goods-categories__item"><a href="#" class="goods-categories__link  goods-categories__link--toy">Детские<br>
+            игрушки</a></li>
+        </ul>
+        <!--        </div>-->
       </div>
       <div class="goods-hit">
         <div class="goods-hit__inner">
@@ -85,7 +93,11 @@
               </tr>
             </table>
             <div class="goods-hit__img">
-              <img src="/img/triple-set-mobile@1x.jpg" alt="" class="goods-hit__img" width="260" height="316">
+              <picture>
+               <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+               <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+                <img src="/img/triple-set-mobile@1x.jpg" alt="baskets" class="goods-hit__img">
+              </picture>
             </div>
             <p class="goods-hit__price">Цена: 990 руб.</p>
             <a href="#" class="btn  btn--goods-hit">ЗАКАЗАТЬ</a>
@@ -148,7 +160,11 @@
           </div>
         </div>
         <div class="location__map">
-          <img src="img/map-mobile@1x.jpg" alt="map">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
+            <img src="img/map-mobile@1x.jpg" alt="map">
+          </picture>
         </div>
         <a href="" class="btn btn--location">НАпишите нам</a>
       </div>
@@ -156,7 +172,7 @@
     <footer class="page-footer">
       <div class="page-footer__inner">
         <div class="logo  logo--footer">
-          <a href="#" class="logo__link"><img src="img/logo-mobile.svg" alt="mishka"></a>
+          <a href="#" class="logo__link"><img src="img/logo-footer.svg" alt="mishka"></a>
         </div>
         <div class="social-links">
           <a href="#" class="social-link  social-link--inst">Instagramm</a>
@@ -165,7 +181,7 @@
         </div>
         <div class="page-footer__copyright">
           <a href="" class="page-footer__link  page-footer__link--academy">Разработано
-<!--          <img src="img/logo-htmlacademy.svg" alt="HTMLAcademy" width="27" height="34">-->
+            <!--          <img src="img/logo-htmlacademy.svg" alt="HTMLAcademy" width="27" height="34">-->
           </a>
         </div>
       </div>
@@ -181,10 +197,13 @@
           <label for="m" class="modal-cart__label">M</label>
           <input type="radio" class="modal-cart__input" name="size" id="l" value="L">
           <label for="l" class="modal-cart__label">L</label><br>
-          <input type="submit" class="btn" value="ДОБАВИТЬ">
+          <input type="submit" class="btn  btn--modal-cart" value="ДОБАВИТЬ">
         </fieldset>
       </div>
     </form>
     <script src="js/menu.js"></script>
+    <script src="js/picturefill.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody(); // run it now or whenever you are ready</script>
   </body>
 </html>

@@ -15,7 +15,6 @@
 
 .main-nav__list {
   list-style: none;
-//  outline: 2px dashed green;
 }
 
 .main-nav__link {
@@ -30,6 +29,14 @@
     line-height: 24px;
     color: #000000;
     text-decoration: none;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
 
     &--search::before {
       position: absolute;
@@ -65,9 +72,18 @@
     }
   }
 
+  .main-nav--order .main-nav__item:nth-child(2) {
+    margin-bottom: -25px;
+  }
+
+  .main-nav--user .main-nav__item:nth-child(2) {
+    margin-bottom: 25px;
+  }
+
   .main-nav__item {
     width: 320px;
     margin: 0;
+//    padding: 0;
     display: block;
     margin-left: -70px;
     border-top: 1px solid #ececec;
@@ -125,6 +141,7 @@
       margin-left: -40px;
       margin-top: 8px;
       order: 3;
+      z-index: 500;
     }
 
     &--user {
@@ -205,7 +222,7 @@
 
   .main-nav--user .main-nav__item:nth-child(1) {
     width: 85px;
-    outline: 1px dashed green;
+//    outline: 1px dashed green;
   }
 
   .main-nav__link--search {
@@ -238,6 +255,7 @@
     }
 
     &--trade {
+      z-index: 100;
       display: block;
       order: 4;
     }
