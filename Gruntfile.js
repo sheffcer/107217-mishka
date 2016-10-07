@@ -163,6 +163,7 @@ module.exports = function(grunt) {
           report: "gzip"
         },
         files: {
+          "build/css/normalize.min.css": ["build/css/normalize.css"],
           "build/css/style.min.css": ["build/css/style.css"]
         }
       }
