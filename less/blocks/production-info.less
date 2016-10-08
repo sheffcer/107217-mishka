@@ -1,12 +1,12 @@
 .production-info {
-  margin-bottom: 80px;
-  min-height: 502px;
+  margin-bottom: 60px;
+//  min-height: 502px;
 }
 
 .production-info__inner {
   .container();
-  outline: 1px solid black;
-  //  padding-bottom: 30px;
+    outline: 1px solid black;
+    padding-bottom: 30px;
 
 }
 
@@ -26,9 +26,10 @@
     content: "";
     top: 32px;
     left: -56px;
-    width: 36px;
+    width: 33px;
     height: 28px;
     background-image: url("../img/icon-video.svg");
+//    background-repeat: no-repeat;
   }
 }
 
@@ -75,52 +76,82 @@
 
 @media @tablet-widths {
   .production-info__video {
-    margin-bottom: 100px;
-    width: 668px;
-    height: 455px;
+    order: 1;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+//    height: 455px;
     outline: 1px dotted red;
   }
 
   .production-info__inner {
     position: relative;
-    padding-bottom: 120px;
+    padding-bottom: 45px;
+    display: flex;
+    flex-direction: column;
   }
 
   .production-info__title {
-    top: 470px;
-    position: absolute;
+    order: 2;
+    margin-bottom: 15px;
+    margin-left: 106px;
     font-size: 20px;
     line-height: 24px;
+    letter-spacing: 0.3px;
+
+    &::before {
+      top: 18px;
+      left: -65px;
+    }
   }
 
-  .production-info__title br {
-    display: none;
+  .production-info__content {
+    order: 3;
   }
+
+//  .production-info__title br {
+//    display: none;
+//  }
+
+//  .production-info__description br {
+//    display: none;
+//  }
 
   .production-info__description {
+    width: 585px;
+    padding-left: 8px;
+    margin-bottom: 35px;
     font-size: 15px;
     line-height: 30px;
   }
 
-  .production-info__description br {
-    display: none;
-  }
+//  .production-info__description br {
+//    display: none;
+//  }
 }
 
 
 @media @desktop-widths {
   .production-info {
-    margin-top: 20px;
-    min-height: 400px;
-  }
+    min-height: 455px;
+    margin-bottom: 100px;
+   }
 
   .production-info__inner {
     padding-bottom: 0;
+    padding: 0;
+    display: block;
   }
 
   .production-info__title {
-    left: 500px;
-    top: 80px;
+    left: 655px;
+    top: 72px;
+    width: 230px;
+
+    &::before {
+      top: -28px;
+      left: 0px;
+    }
   }
 
   .production-info__inner {
@@ -129,20 +160,23 @@
 
   .production-info__video {
     float: left;
+    width: 682px;
+    height: 455px;
     margin-right: 20px;
+    margin-top: -88px;
+    margin-bottom: 0;
+  }
+
+  .production-info__description {
+    margin-top: -60px;
+    margin-left: 0;
+    width: 230px;
   }
 
   .production-info__content {
     float: right;
+    width: 230px;
     margin-top: 150px;
     margin-right: 70px;
-  }
-
-  .production-info__title br {
-    display: block;
-  }
-
-  .production-info__description br {
-    display: block;
   }
 }
