@@ -9,18 +9,35 @@
 
 .location__map  {
 //  background: url("../img/map-mobile@1x.jpg") no-repeat center top;
+  position: relative;
   width: 320px;
   margin-left: -30px;
   margin-top: 25px;
   margin-bottom: 45px;
   outline: 1px dotted black;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 124px;
+    top: 165px;
+    width: 73px;
+    height: 102px;
+    background-image: url(../img/icon-map-pin.svg);
+    background-repeat: no-repeat;
+   }
 }
 
 @media @tablet-widths {
   .location__map {
+    position: relative;
     margin-top: 25px;
     width: 768px;
     margin-left: -50px;
+
+    &::after {
+      left: 347px;
+    }
   }
 }
 
@@ -33,7 +50,9 @@
     float: right;
     width: 525px;
     margin-top: 150px;
-
+    &::after {
+      left: 237px;
+    }
   }
 }
 
