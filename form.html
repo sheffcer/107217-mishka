@@ -68,11 +68,11 @@
               <div class="form__flex">
                 <legend class="form__title">ТИП</legend>
                 <div class="form__items">
-                  <div class="form__item">
+                  <div class="form__item  form__item--type">
                     <input type="radio" class="form__input form__input--radio" name="popular" id="accessory" checked>
                     <label for="accessory" class="form__label">Аксессуар для интерьера</label>
                   </div>
-                  <div class="form__item">
+                  <div class="form__item  form__item--type">
                     <input type="radio" class="form__input form__input--radio" name="popular" id="toy">
                     <label for="toy" class="form__label">Детская игрушка</label>
                   </div>
@@ -140,7 +140,9 @@
             </fieldset>
             <fieldset class="form__fieldset  form__fieldset--mail">
               <div class="form__flex">
-                <legend class="form__title">E-MAIL</legend>
+                <div>
+                  <legend class="form__title">E-MAIL</legend>
+                </div>
                  <div class="form__item form__item--phone">
                   <input type="email" class="form__input form__input--mail" name="mail" id="mail" placeholder="Ваш Email" required>
                 </div>
@@ -150,7 +152,7 @@
               <div class="form__flex">
                 <legend class="form__title">ДОП</legend>
                 <div class="form__item">
-                  <textarea class="form__textarea" name="comment">Опишите подробно все свои восторги </textarea>
+                  <textarea class="form__textarea" name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                 </div>
               </div>
             </fieldset>
