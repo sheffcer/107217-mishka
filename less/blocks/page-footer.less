@@ -13,23 +13,49 @@
 
 .page-footer__link {
   position: relative;
+  min-width: 130px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 19px;
   line-height: 18px;
   color: #000000;
   text-decoration: none;
 
+  &:active {
+    transition: 0.4s;
+    opacity: 0.3;
+  }
+
+  &--academy::before {
+    position: absolute;
+    content: "";
+    top: -23px;
+    left: -35px;
+    width: 260px;
+    border-top: 1px solid #e5e5e5;
+    }
+
   &--academy::after {
     position: absolute;
     content: "";
-    top: -2px;
+    top: -1px;
     left: 160px;
     width: 27px;
     height: 34px;
     background-image: url("../img/logo-htmlacademy.svg");
+    backgrund-repeat: no-repeat;
+    opacity: 0.75;
   }
-}
 
+    &--academy:hover::after {
+      opacity: 1;
+      transition: 0.4s;
+    }
+
+    &--academy:active::after {
+      opacity: 0.6;
+      transition: 0.4s;
+    }
+}
 
 .page-footer__copyright {
   margin-top: 35px;
@@ -52,6 +78,13 @@
     float: right;
     margin-top: 65px;
     margin-right: 25px;
+  }
+
+  .page-footer__link {
+
+    &--academy::before {
+      display:none;
+    }
   }
 
   .page-footer__inner {

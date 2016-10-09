@@ -90,10 +90,12 @@ input[type="radio"] + label {
 
 input[type="radio"] + label:hover::before {
   border: 2px solid #62d1ba;
+  transition: 0.4s;
 }
 
 input[type="radio"] + label:active::before {
   border: 2px solid #c7c7c7;
+  transition: 0.4s;
 }
 
 input[type="radio"] + label::before {
@@ -120,6 +122,7 @@ input[type="radio"]:checked + label::after {
   height: 16px;
   border-radius: 50%;
   background-color: #62d1ba;
+  transition: 0.4s;
 }
 
 input[type="checkbox"] + label {
@@ -154,10 +157,12 @@ input[type="checkbox"]:checked + label::after {
 
 input[type="checkbox"] + label:hover::before {
   border: 2px solid #62d1ba;
+  transition: 0.4s;
 }
 
 input[type="checkbox"] + label:active::before {
   border: 2px solid #c7c7c7;
+  transition: 0.4s;
 }
 
 .form__input  {
@@ -172,9 +177,39 @@ input[type="checkbox"] + label:active::before {
   border-bottom: 2px solid #000000;
 }
 
+.form__input:active::placeholder {
+}
+
+input[type="text"] + label:invalid::before {
+  border-bottom: 2px solid #f0b1b1;
+  transition: 0.4s;
+}
+
+
+//.form__input:invalid {
+//  outline: none;
+//  border-bottom: 2px solid #f0b1b1;
+//}
+
+.form__input:hover {
+  border-bottom: 2px solid #62d1ba;
+  transition: 0.4s;
+}
+
+.form__input:focus {
+  outline: none;
+  border-bottom: 2px solid #62d1ba;
+  transition: 0.4s;
+}
+
 .form__input::placeholder {
   color: #444444;
+  transition: 0.4s;
   opacity: 0.3;
+}
+
+.form__input:active::placeholder {
+  opacity: 1;
 }
 
 .form__textarea  {
@@ -187,13 +222,33 @@ input[type="checkbox"] + label:active::before {
   outline: none;
 }
 
-.form__textarea::placeholder {
+.form__textarea:hover {
+  border: 2px solid #62d1ba;
+  transition: 0.4s;
+}
 
+.form__textarea:active {
+  border: 2px solid #62d1ba;
+  transition: 0.4s;
+}
+
+.form__textarea:invalid {
+  outline: none;
+  border-bottom: 2px solid #f0b1b1;
+}
+
+.form__textarea::placeholder {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
   opacity: 0.3;
+  transition: 0.4s;
+}
+
+
+.form__textarea:active::placeholder {
+  opacity: 1;
 }
 
 .form__submessage {

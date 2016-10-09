@@ -32,10 +32,12 @@
 
     &:hover {
       opacity: 0.6;
+      transition: 0.4s;
     }
 
     &:active {
       opacity: 0.3;
+      transition: 0.4s;
     }
 
     &--search::before {
@@ -49,6 +51,12 @@
       opacity: 0.2;
     }
 
+    &--search:hover::before {
+      background-image: url("../img/icon-search-green.svg");
+      opacity: 1;
+      transition: 0.4s;
+    }
+
     &--cart::before {
       position: absolute;
       content: "";
@@ -58,6 +66,11 @@
       height: 18px;
       background-image: url("../img/icon-cart.svg");
       opacity: 0.2;
+    }
+
+    &--cart:hover::before {
+      background-image: url("../img/icon-cart-green.svg");
+      opacity: 1;
     }
   }
 
