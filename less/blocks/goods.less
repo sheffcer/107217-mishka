@@ -22,6 +22,16 @@
   border: 1px solid #ececec;
 //  border: 1px solid black;
   padding-bottom: 5px;
+
+  &:hover {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
+  }
+
+  &:active {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
+  }
 }
 
 .goods__title a {
@@ -34,6 +44,16 @@
   line-height: 24px;
   color: #000000;
   text-decoration: none;
+
+  &:hover {
+      opacity: 0.6;
+      transition: 0.4s;
+    }
+
+  &:active {
+    opacity: 0.3;
+    transition: 0.4s;
+  }
 }
 
 .goods__description {
@@ -70,6 +90,16 @@
   width: 18px;
   height: 18px;
   background-image: url("../img/icon-cart.svg");
+  opacity: 0.2;
+}
+
+.goods__cart a:hover::after {
+  background-image: url("../img/icon-cart-green.svg");
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.goods__cart a:active::after {
   opacity: 0.2;
 }
 

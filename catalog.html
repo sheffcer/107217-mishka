@@ -155,21 +155,27 @@
         </div>
       </div>
     </footer>
-    <form class="modal-cart">
-      <div class="container">
-        <h3 class="modal-cart__title">Добавить в корзину</h3>
-        <fieldset class="form__fieldset">
-          <legend class="modal-cart__title">Выберите размер:</legend>
-          <input type="radio" class="modal-cart__input" name="size" id="s" value="S">
-          <label for="s" class="modal-cart__label">S</label>
-          <input type="radio" class="modal-cart__input" name="size" id="m" value="M">
-          <label for="m" class="modal-cart__label">M</label>
-          <input type="radio" class="modal-cart__input" name="size" id="l" value="L">
-          <label for="l" class="modal-cart__label">L</label><br>
-          <input type="submit" class="btn  btn--modal-cart" value="ДОБАВИТЬ">
-        </fieldset>
+    <div class="modal-cart__shadow"></div>
+    <div class="modal-cart">
+<!--     <div class="modal-cart__shadow"></div>-->
+      <div class="modal-cart__content">
+<!--        <div class="modal-cart__inner">-->
+          <h3 class="modal-cart__title">Добавить в корзину</h3>
+          <span class="modal-cart__subtitle">Выберите размер:</span>
+           <form class="">
+            <div class="modal-cart__list">
+              <input type="radio" class="modal-cart__input" name="size" id="s" value="S">
+              <label for="s" class="modal-cart__label">S</label>
+              <input type="radio" class="modal-cart__input" name="size" id="m" value="M">
+              <label for="m" class="modal-cart__label">M</label>
+              <input type="radio" class="modal-cart__input" name="size" id="l" value="L">
+              <label for="l" class="modal-cart__label">L</label>
+            </div><br>
+            <input type="submit" class="btn  btn--modal-cart" value="ДОБАВИТЬ">
+          </form>
+<!--        </div>-->
       </div>
-    </form>
+    </div>
     <script src="js/menu.js"></script>
     <script src="js/picturefill.js"></script>
     <script src="js/svg4everybody.min.js"></script>
