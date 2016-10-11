@@ -83,13 +83,7 @@
   display: block;
 //  outline: 1px solid yellow;
   z-index: 500;
-  &:hover {
-    padding-top: 0;
-    padding-bottom: 5px;
-    margin-top: -5px;
-  }
-
-}
+ }
 
 .goods-categories__item:nth-child(1) {
   background-color: #63d1bb;
@@ -113,6 +107,7 @@
 
 @media @tablet-widths {
   .goods-categories {
+    position: relative;
     width: 668px;
     margin: 0 auto;
     min-height: 120px;
@@ -144,6 +139,8 @@
     padding-left: 35px;
     font-size: 20px;
     line-height: 30px;
+
+
 
     &--interior::after {
       top: 30px;

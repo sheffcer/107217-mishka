@@ -1,5 +1,15 @@
 .features {
+  position: relative;
   min-height: 840px;
+  &::before {
+    position: absolute;
+    content: "";
+    top: -40px;
+    height: 34px;
+    width:100%;
+    background-image: url("/img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+  }
 }
 
 .features__inner {
@@ -83,6 +93,9 @@
 
 @media @tablet-widths {
   .features {
+    &::before {
+      top: -60px;
+    }
   }
 
   .features__inner {
@@ -145,6 +158,9 @@
 @media @desktop-widths {
   .features {
     min-height: 645px;
+    &::before {
+      top: -35px;
+    }
   }
 
   .features__inner {
