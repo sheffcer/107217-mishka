@@ -334,19 +334,19 @@ input[type="text"] + label:invalid::before {
 
 .form__fieldset--type {
   padding-bottom: 0;
-  outline: 2px dashed blue;
+//  outline: 2px dashed blue;
   margin-bottom: 5px;
 }
 
 .form__fieldset--color {
-  outline: 2px dashed blue;
+//  outline: 2px dashed blue;
 //  margin-bottom: 20px;
 }
 
 .form__fieldset--personal {
   margin-top: -10px;
 //  padding-bottom: 140px;
-  outline: 2px dashed blue;
+//  outline: 2px dashed blue;
   margin-bottom: 30px;
 
 }
@@ -354,21 +354,21 @@ input[type="text"] + label:invalid::before {
 .form__fieldset--phone {
   margin-top: -45px;
 //  padding-bottom: 30px;
-  outline: 2px dashed blue;
+//  outline: 2px dashed blue;
   margin-bottom: 40px;
 }
 
 .form__fieldset--mail {
-  outline: 2px dashed blue;
+//  outline: 2px dashed blue;
   margin-top: -53px;
-  margin-bottom: 70px;
+  margin-bottom: 130px;
 }
 
 .form__fieldset--extra {
   //  padding-bottom: 100px;
-  margin-top: -85px;
-  outline: 2px dashed blue;
-  margin-bottom: 23px;
+  margin-top: -145px;
+//  outline: 2px dashed blue;
+  margin-bottom: 25px;
 }
 
 .form__flex {
@@ -378,7 +378,7 @@ input[type="text"] + label:invalid::before {
 
 @media @tablet-widths {
   .form {
-//    margin-bottom: -10px;
+    margin-bottom: -27px;
   }
 
   .form__description {
@@ -423,6 +423,7 @@ input[type="text"] + label:invalid::before {
   }
 
   .form__fieldset--extra .form__title {
+    margin-top: 20px;
     margin-right: 130px;
   }
 
@@ -580,7 +581,7 @@ input[type="text"] + label:invalid::before {
     padding-bottom: 20px;
     padding-top: 65px;
     margin-bottom: 15px;
-//    background-color: #f1f1f1;
+    background-color: #f1f1f1;
   }
 
   .form__fieldset--personal {
@@ -590,24 +591,26 @@ input[type="text"] + label:invalid::before {
 
   .form__fieldset--phone {
     margin-top: -96px;
-//    background-color: #f1f1f1;
+    background-color: #f1f1f1;
   }
 
 
   .form__fieldset--mail {
     margin-top: -80px;
     padding-bottom: 5px;
-//    background-color: #f1f1f1;
+    background-color: #f1f1f1;
   }
 
   .form__fieldset--extra {
-    margin-top: -10px;
+    margin-top: -70px;
     padding-bottom: 0;
 //    margin-bottom: 25px;
   }
 
 
   .form__submessage {
+    display: block;
+    position: static;
     order: 2;
 //    margin: 0;
     margin-top: -25px;
@@ -618,6 +621,7 @@ input[type="text"] + label:invalid::before {
 
   .form__textarea  {
     padding: 15px;
+//    margin-top: 20px;
     margin-left: -10px;
     min-width: 480px;
     min-height: 110px;
@@ -629,6 +633,14 @@ input[type="text"] + label:invalid::before {
   .form__textarea::placeholder {
     font-size: 19px;
     line-height: 18px;
+  }
+
+  .form__flex {
+    position: relative;
+  }
+
+  .form__submessage {
+    margin-left: 380px;
   }
 }
 
@@ -642,14 +654,14 @@ input[type="text"] + label:invalid::before {
 
   .form__fieldset--type {
 //    padding-bottom: 120px;
-    outline: 2px dashed blue;
+//    outline: 2px dashed blue;
     margin: 0;
   }
 
   .form__fieldset--color {
     margin-left: -15px;
     padding-bottom: 30px;
-    outline: 2px dashed blue;
+//    outline: 2px dashed blue;
   }
 
   .form__fieldset--personal {
@@ -667,7 +679,7 @@ input[type="text"] + label:invalid::before {
   }
 
   .form__fieldset--extra {
-    margin-bottom: 85px;
+//    margin-bottom: 85px;
   }
 
   .form__item--personal .form__input {
@@ -767,7 +779,7 @@ input[type="text"] + label:invalid::before {
   }
 
   .form__fieldset--extra .form__title {
-    margin-top: 42px;
+    margin-top: 100px;
     margin-left: 65px;
     margin-right: 70px;
   }
@@ -776,16 +788,16 @@ input[type="text"] + label:invalid::before {
     padding: 15px;
     margin:0;
     margin-left: -10px;
-    margin-top: 25px;
+    margin-top: 75px;
     min-width: 670px;
-    min-height: 110px;
+    min-height: 120px;
     background-color: #ffffff;
     border: 2px solid #444444;
     outline: 0;
   }
 
   .form__submessage {
-    margin-top: -50px;
-  }
-
+    margin-top: 10px;
+    margin-left: 585px;
+   }
 }
