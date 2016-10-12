@@ -60,7 +60,7 @@
         </div>
       </div>
       <form class="form">
-        <div class="form__inner">
+<!--        <div class="form__inner">-->
           <div class="form__content">
             <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
               свяжемся с вами, чтобы уточнить детали.</p>
@@ -68,13 +68,13 @@
               <div class="form__flex">
                 <legend class="form__title">ТИП</legend>
                 <div class="form__items">
-                  <div class="form__item">
-                    <input type="radio" class="form__input form__input--radio" name="popular" id="accessory">
-                    <label for="accessory" class="type__label">Аксессуар для интерьера</label>
+                  <div class="form__item  form__item--type">
+                    <input type="radio" class="form__input form__input--radio" name="popular" id="accessory" checked>
+                    <label for="accessory" class="form__label">Аксессуар для интерьера</label>
                   </div>
-                  <div class="form__item">
+                  <div class="form__item  form__item--type">
                     <input type="radio" class="form__input form__input--radio" name="popular" id="toy">
-                    <label for="toy" class="type__label">Детская игрушка</label>
+                    <label for="toy" class="form__label">Детская игрушка</label>
                   </div>
                 </div>
               </div>
@@ -84,11 +84,11 @@
                 <legend class="form__title">ЦВЕТ</legend>
                 <div class="form__items">
                   <div class="form__item form__item--color">
-                    <input type="checkbox" class="form__input form__input--checkbox" name="white" id="white">
+                    <input type="checkbox" class="form__input form__input--checkbox" name="white" id="white" checked>
                     <label for="white" class="form__label">Белый</label>
                   </div>
                   <div class="form__item form__item--color">
-                    <input type="checkbox" class="form__input form__input--checkbox" name="grey" id="grey">
+                    <input type="checkbox" class="form__input form__input--checkbox" name="grey" id="grey" checked>
                     <label for="grey" class="form__label">Серый</label>
                   </div>
                   <div class="form__item  form__item--color">
@@ -114,15 +114,15 @@
               <div class="form__flex">
                 <legend class="form__title">ФИО</legend>
                 <div class="form__items">
-                  <div class="form__item">
+                  <div class="form__item  form__item--personal">
                     <label for="name" class="form__label">Имя:</label>
                     <input type="text" class="form__input" name="name" id="name" placeholder="Введите ваше имя" required>
                   </div>
-                  <div class="form__item">
+                  <div class="form__item  form__item--personal">
                     <label for="surname" class="form__label">Фамилия:</label>
                     <input type="text" class="form__input" name="surname" id="surname" placeholder="Укажите фамилию" required>
                   </div>
-                  <div class="form__item">
+                  <div class="form__item  form__item--personal">
                     <label for="second-name" class="form__label">Отчество:</label>
                     <input type="text" class="form__input" name="second-name" id="second-name"
                            placeholder="Отчество, если желаете" required>
@@ -133,16 +133,16 @@
             <fieldset class="form__fieldset  form__fieldset--phone">
               <div class="form__flex">
                 <legend class="form__title">ТЕЛ</legend>
-                <div class="form__item">
-                  <input type="tel" class="form__input  form__input--tel" name="phone" id="phone" placeholder="+7 ХХХ ХХ ХХ" required>
+                <div class="form__item  form__item--phone">
+                  <input type="tel" class="form__input" name="phone" id="phone" placeholder="+7 ХХХ ХХ ХХ" required>
                 </div>
               </div>
             </fieldset>
             <fieldset class="form__fieldset  form__fieldset--mail">
               <div class="form__flex">
                 <legend class="form__title">E-MAIL</legend>
-                 <div class="form__item">
-                  <input type="email" class="form__input form__input--mail" name="mail" id="mail" placeholder="Ваш Email" required>
+                 <div class="form__item form__item--mail">
+                  <input type="email" class="form__input" name="mail" id="mail" placeholder="Ваш Email" required>
                 </div>
               </div>
             </fieldset>
@@ -150,7 +150,7 @@
               <div class="form__flex">
                 <legend class="form__title">ДОП</legend>
                 <div class="form__item">
-                  <textarea class="form__textarea" name="comment">Опишите подробно все свои восторги </textarea>
+                  <textarea class="form__textarea" name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                 </div>
               </div>
             </fieldset>
@@ -159,13 +159,15 @@
               <input type="submit" class="btn btn--form" value="ОТПРАВИТЬ ЗАКАЗ">
             </div>
           </div>
-        </div>
+<!--        </div>-->
       </form>
     </main>
     <footer class="page-footer">
       <div class="page-footer__inner">
         <div class="logo  logo--footer">
-          <a href="#" class="logo__link"><img src="img/logo-footer.svg" alt="mishka"></a>
+          <a href="#" class="logo__link">
+<!--            <img src="img/logo-footer.svg" alt="mishka">-->
+          </a>
         </div>
         <div class="social-links">
           <a href="#" class="social-link  social-link--inst">Instagramm</a>
@@ -174,12 +176,17 @@
         </div>
         <div class="page-footer__copyright">
           <a href="" class="page-footer__link  page-footer__link--academy">Разработано
-<!--          <img src="img/logo-htmlacademy.svg" alt="HTMLAcademy" width="27" height="34">-->
+<!--           <svg width="27" height="32"><use xlink:href="logo-htmlacademy"></use></svg>-->
+            <!--          <img src="img/logo-htmlacademy.svg" alt="HTMLAcademy" width="27" height="34">-->
           </a>
         </div>
       </div>
     </footer>
     <script src="js/menu.js"></script>
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
     <script src="js/picturefill.js"></script>
     <script src="js/svg4everybody.min.js"></script>
 <script>svg4everybody(); // run it now or whenever you are ready</script>

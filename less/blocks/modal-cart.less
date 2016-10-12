@@ -1,0 +1,131 @@
+.modal-cart {
+  display: none;
+}
+
+.modal-cart__content {
+  z-index: 9999;
+  position: fixed;
+  top: 50%;
+  left: 26%;
+  width: 260px;
+  padding: 0 30px;
+  background-color: #ffffff;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-cart__shadow {
+  display: none;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.85;
+  background-color: #ffffff;
+}
+
+.modal-cart__title {
+  margin-top: 35px;
+  margin-bottom: 20px;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal-cart__subtitle {
+  display: block;
+  margin-top: -10px;
+  min-width: 130px;
+  margin-left: 65px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.modal-cart__list {
+  margin-top: 20px;
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+.modal-cart__list input[type="radio"] {
+  display: none;
+}
+
+.modal-cart__list label {
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+  width: 80px;
+  height: 50px;
+  line-height: 50px;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-size: 17px;
+  color: #444444;
+  border: 2px solid #ececec;
+  cursor: pointer;
+  &:hover {
+    border-color: #c7c7c7;
+  }
+
+  &:active {
+    border-color: #62d1ba;
+  }
+}
+
+.modal-cart__list label:first-child {
+  margin-right: 0;
+}
+
+@media @tablet-widths {
+  .modal-cart {
+    min-width: 567px;
+  }
+
+  .modal-cart__content {
+    min-width: 567px;
+    top: 50%;
+    left: 10%;
+    width: 352px;
+//    padding: 0 107px;
+  }
+
+  .modal-cart__list {
+    margin-top: 25px;
+    width: 352px;
+    margin-left: 115px;
+  }
+
+  .modal-cart__list label {
+    width: 110px;
+    height: 50px;
+  }
+
+  .modal-cart__title {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .modal-cart__subtitle {
+    font-size: 17px;
+    line-height: 30px;
+    margin-left: 210px;
+  }
+}
+
+@media @tablet-widths {
+  .modal-cart__content {
+    min-width: 567px;
+    top: 50%;
+    left: 24%;
+    width: 352px;
+  }
+}

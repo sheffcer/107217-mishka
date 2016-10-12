@@ -1,10 +1,20 @@
 .features {
+  position: relative;
   min-height: 840px;
+  &::before {
+    position: absolute;
+    content: "";
+    top: -42px;
+    height: 34px;
+    width:100%;
+    background-image: url("/img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+  }
 }
 
 .features__inner {
   .container();
-  outline: 2px dashed green;
+//  outline: 2px dashed green;
 }
 
 .fearures__title {
@@ -29,7 +39,7 @@
   font-size: 17px;
   line-height: 16px;
   color: #000000;
-  outline: 1px dotted red;
+//  outline: 1px dotted red;
 
   &::before {
     content: "";
@@ -83,6 +93,9 @@
 
 @media @tablet-widths {
   .features {
+    &::before {
+      top: -60px;
+    }
   }
 
   .features__inner {
@@ -145,6 +158,9 @@
 @media @desktop-widths {
   .features {
     min-height: 645px;
+    &::before {
+      top: -35px;
+    }
   }
 
   .features__inner {

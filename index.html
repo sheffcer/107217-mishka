@@ -53,7 +53,7 @@
         <span class="page-header__delivery">Бесплатная доставка по России</span>
       </div>
     </header>
-    <main>
+    <section>
       <div class="intro">
         <div class="intro__inner">
           <h1 class="intro__title">Милые штуки<br> ручной<br> работы для дома</h1>
@@ -107,18 +107,18 @@
       <div class="features">
         <div class="features__inner">
           <h2 class="fearures__title">Коротко о нас:</h2>
-          <ul class="features__list">
+          <div class="features__list">
             <div class="features__column">
-              <li class="features__item  features__item--ecology">Экологически<br> чистые материалы</li>
-              <li class="features__item  features__item--scandinavia">Скандинавский стиль<br> по российской цене</li>
-              <li class="features__item  features__item--like">Увеличивает лайки<br> на фотографиях</li>
+              <div class="features__item  features__item--ecology">Экологически<br> чистые материалы</div>
+              <div class="features__item  features__item--scandinavia">Скандинавский стиль<br> по российской цене</div>
+              <div class="features__item  features__item--like">Увеличивает лайки<br> на фотографиях</div>
             </div>
             <div class="features__column">
-              <li class="features__item  features__item--love">Связано вручную с<br> любовью и умилением</li>
-              <li class="features__item  features__item--manufacture">Поддержка отечественного<br> производителя</li>
-              <li class="features__item  features__item--gift">Поставляется в<br> подарочной упаковке</li>
+              <div class="features__item  features__item--love">Связано вручную с<br> любовью и умилением</div>
+              <div class="features__item  features__item--manufacture">Поддержка отечественного<br> производителя</div>
+              <div class="features__item  features__item--gift">Поставляется в<br> подарочной упаковке</div>
             </div>
-          </ul>
+          </div>
         </div>
       </div>
       <div class="reviews">
@@ -143,7 +143,7 @@
           </div>
         </div>
       </div>
-    </main>
+    </section>
     <div class="location">
       <div class="location__inner">
         <div class="contact">
@@ -160,11 +160,15 @@
           </div>
         </div>
         <div class="location__map">
-          <picture>
+<!--
+         <picture>
             <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
             <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
             <img src="img/map-mobile@1x.jpg" alt="map">
           </picture>
+-->
+<!--          <iframe src="https://www.google.com/maps/d/embed?mid=1u4jll-2QcSGnLOWuUEwR2LvEgZQ"></iframe>-->
+       <iframe src="https://www.google.com/maps/d/embed?mid=1fHBo3e65VWip1j62wuVDGlpnAMY" width="640" height="480"></iframe>
         </div>
         <a href="" class="btn btn--location">НАпишите нам</a>
       </div>
@@ -172,7 +176,9 @@
     <footer class="page-footer">
       <div class="page-footer__inner">
         <div class="logo  logo--footer">
-          <a href="#" class="logo__link"><img src="img/logo-footer.svg" alt="mishka"></a>
+          <a href="#" class="logo__link">
+<!--            <img src="img/logo-footer.svg" alt="mishka">-->
+          </a>
         </div>
         <div class="social-links">
           <a href="#" class="social-link  social-link--inst">Instagramm</a>
@@ -181,26 +187,33 @@
         </div>
         <div class="page-footer__copyright">
           <a href="" class="page-footer__link  page-footer__link--academy">Разработано
+<!--           <svg width="27" height="32"><use xlink:href="logo-htmlacademy"></use></svg>-->
             <!--          <img src="img/logo-htmlacademy.svg" alt="HTMLAcademy" width="27" height="34">-->
           </a>
         </div>
       </div>
     </footer>
-    <form class="modal-cart">
-      <div class="container">
-        <h3 class="modal-cart__title">Добавить в корзину</h3>
-        <fieldset class="form__fieldset">
-          <legend class="modal-cart__title">Выберите размер:</legend>
-          <input type="radio" class="modal-cart__input" name="size" id="s" value="S">
-          <label for="s" class="modal-cart__label">S</label>
-          <input type="radio" class="modal-cart__input" name="size" id="m" value="M">
-          <label for="m" class="modal-cart__label">M</label>
-          <input type="radio" class="modal-cart__input" name="size" id="l" value="L">
-          <label for="l" class="modal-cart__label">L</label><br>
-          <input type="submit" class="btn  btn--modal-cart" value="ДОБАВИТЬ">
-        </fieldset>
+    <div class="modal-cart__shadow"></div>
+    <div class="modal-cart">
+<!--     <div class="modal-cart__shadow"></div>-->
+      <div class="modal-cart__content">
+<!--        <div class="modal-cart__inner">-->
+          <h3 class="modal-cart__title">Добавить в корзину</h3>
+          <span class="modal-cart__subtitle">Выберите размер:</span>
+           <form class="">
+            <div class="modal-cart__list">
+              <input type="radio" class="modal-cart__input" name="size" id="s" value="S">
+              <label for="s" class="modal-cart__label">S</label>
+              <input type="radio" class="modal-cart__input" name="size" id="m" value="M">
+              <label for="m" class="modal-cart__label">M</label>
+              <input type="radio" class="modal-cart__input" name="size" id="l" value="L">
+              <label for="l" class="modal-cart__label">L</label>
+            </div><br>
+            <input type="submit" class="btn  btn--modal-cart" value="ДОБАВИТЬ">
+          </form>
+<!--        </div>-->
       </div>
-    </form>
+    </div>
     <script src="js/menu.js"></script>
     <script src="js/picturefill.js"></script>
     <script src="js/svg4everybody.min.js"></script>

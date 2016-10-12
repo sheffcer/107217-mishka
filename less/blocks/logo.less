@@ -15,10 +15,12 @@
 .logo__link {
   &:hover {
     opacity: 0.6;
+    transition: 0.4s;
   }
 
   &:active {
     opacity: 0.3;
+    transition: 0.4s;
   }
 }
 
@@ -43,8 +45,23 @@
       height: 34px;
       display: block;
       float: left;
-      margin-right: 145px;
-      margin-top: 35px;
+      margin-right: 155px;
+      margin-top: 55px;
+      background-image: url(../img/logo-footer.svg);
+      background-repeat: no-repeat;
+    }
+
+    &--footer:hover {
+      background-image: url(../img/logo-footer-green.svg);
+      background-repeat: no-repeat;
+      transition: 0.4s;
+    }
+
+    &--footer:active {
+      background-image: url(../img/logo-footer-green.svg);
+      background-repeat: no-repeat;
+      transition: 0.4s;
+      opacity: 0.4;
     }
   }
 }
@@ -67,8 +84,8 @@
       float: left;
       margin: 0;
       margin-right: 300px;
-      margin-top: 40px;
+      margin-top: 55px;
       position: static;
-    }
+      }
   }
 }

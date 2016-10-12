@@ -5,48 +5,66 @@
 
 .reviews__inner {
   .container();
-  outline: 2px dashed blue;
+//  outline: 2px dashed blue;
   //  padding-bottom: 150px;
 }
 
 .reviews__nav {
-//  display: inline-block;
   font-size: 0;
-//  margin-top: -10px;
-//  margin-bottom: 5px;
-
 }
 
 .reviews__prev {
   width: 130px;
-  border: none;
+  border: 0;
+  outline: 0;
   border: 1px solid #ececec;
   background-color: #ffffff;
   margin-top: 27px;
   display: inline-block;
   vertical-align: middle;
-//  font-size: 0;
-//  width: 56px;
   height: 52px;
   background-image: url(../img/icon-left-arrow.svg);
   background-repeat: no-repeat;
   background-position: 40px 10px;
+
+  &:hover {
+    outline: none;
+    opacity: 0.6;
+    transition: 0.4s;
+  }
+
+  &:active {
+    outline: none;
+    opacity: 0.3;
+    transition: 0.4s;
+  }
 }
 
 .reviews__next {
   width: 130px;
-  border: none;
+  border: 0;
+  outline: 0;
   border: 1px solid #ececec;
   background-color: #ffffff;
   margin-top: 27px;
   display: inline-block;
   vertical-align: middle;
-//  font-size: 0;
-//  width: 56px;
   height: 52px;
   background-image: url(../img/icon-right-arrow.svg);
   background-repeat: no-repeat;
   background-position: 30px 10px;
+
+  &:hover {
+    outline: none;
+    opacity: 0.6;
+    transition: 0.4s;
+  }
+
+  &:active {
+    outline: none;
+    opacity: 0.3;
+    transition: 0.4s;
+  }
 }
 
 .reviews__description {
@@ -55,9 +73,9 @@
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
-  column-rule: #444444;
+  color: #444444;
   margin: 0;
-  outline: 1px dotted red;
+//  outline: 1px dotted red;
 }
 
 .reviews__author {
