@@ -21,7 +21,22 @@ body {
 //    min-height: 3710x;
     //    background-color: @bg-darkgrey;
   }
+
+  main {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 1730px;
+      width: 100%;
+      height: 24px;
+      background: url("../img/bg-zigzag-fill.svg") repeat-x;
+      background-size: contain;
+  }
 }
+
+}
+
 
 @media @desktop-widths {
   body {
@@ -31,6 +46,20 @@ body {
 //    min-height: 3623x;
 //    background-color: @bg-darkgrey;
   }
+
+  main {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 1930px;
+      width: 100%;
+      height: 24px;
+      background: url("../img/bg-zigzag-fill.svg") repeat-x;
+      background-size: contain;
+  }
+}
+
 }
 
 
