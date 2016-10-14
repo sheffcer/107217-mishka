@@ -66,7 +66,7 @@
               свяжемся с вами, чтобы уточнить детали.</p>
             <fieldset class="form__fieldset  form__fieldset--type">
               <div class="form__flex">
-                <legend class="form__title">ТИП</legend>
+                <h3 class="form__title">ТИП</h3>
                 <div class="form__items">
                   <div class="form__item  form__item--type">
                     <input type="radio" class="form__input form__input--radio" name="popular" id="accessory" checked>
@@ -81,7 +81,7 @@
             </fieldset>
             <fieldset class="form__fieldset  form__fieldset--color">
               <div class="form__flex">
-                <legend class="form__title">ЦВЕТ</legend>
+                <h3 class="form__title">ЦВЕТ</h3>
                 <div class="form__items">
                   <div class="form__item form__item--color">
                     <input type="checkbox" class="form__input form__input--checkbox" name="white" id="white" checked>
@@ -112,7 +112,7 @@
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--personal">
               <div class="form__flex">
-                <legend class="form__title">ФИО</legend>
+                <h3 class="form__title">ФИО</h3>
                 <div class="form__items">
                   <div class="form__item  form__item--personal">
                     <label for="name" class="form__label">Имя:</label>
@@ -132,7 +132,7 @@
             </fieldset>
             <fieldset class="form__fieldset  form__fieldset--phone">
               <div class="form__flex">
-                <legend class="form__title">ТЕЛ</legend>
+                <h3 class="form__title">ТЕЛ</h3>
                 <div class="form__item  form__item--phone">
                   <input type="tel" class="form__input" name="phone" id="phone" placeholder="+7 ХХХ ХХ ХХ" required>
                 </div>
@@ -140,7 +140,7 @@
             </fieldset>
             <fieldset class="form__fieldset  form__fieldset--mail">
               <div class="form__flex">
-                <legend class="form__title">E-MAIL</legend>
+                <h3 class="form__title">E-MAIL</h3>
                  <div class="form__item form__item--mail">
                   <input type="email" class="form__input" name="mail" id="mail" placeholder="Ваш Email" required>
                 </div>
@@ -148,7 +148,7 @@
             </fieldset>
             <fieldset class="form__fieldset  form__fieldset--extra">
               <div class="form__flex">
-                <legend class="form__title">ДОП</legend>
+                <p class="form__title">ДОП</p>
                 <div class="form__item">
                   <textarea class="form__textarea" name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                 </div>
@@ -156,6 +156,7 @@
             </fieldset>
             <div class="form__flex">
               <p class="form__submessage">Все поля обязательны для заполнения</p>
+              <p class="form__submessage form__submessage--alternate">Все поля являются обязательными</p>
               <input type="submit" class="btn btn--form" value="ОТПРАВИТЬ ЗАКАЗ">
             </div>
           </div>

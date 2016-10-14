@@ -41,7 +41,7 @@
 .form__description {
   .container();
   margin-top: -10px;
-  margin-bottom: 16px;
+//  margin-bottom: 16px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -198,6 +198,7 @@ input[type="checkbox"] + label:active::before {
   position: relative;
 
   &::after {
+    z-index: 100;
     position: absolute;
     content: "";
     width: 28px;
@@ -319,11 +320,14 @@ input[type="text"] + label:invalid::before {
 .form__submessage {
   min-width: 225px;
   margin-top: -60px;
-  margin-left: -8px;
+  margin-left: -7px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   color: #444444;
 //  outline: 2px dashed blue;
+  &--alternate {
+    display: none;
+  }
 }
 
 .form__item--personal label {
@@ -335,19 +339,19 @@ input[type="text"] + label:invalid::before {
 .form__fieldset--type {
   padding-bottom: 0;
 //  outline: 2px dashed blue;
-  margin-bottom: 5px;
+  margin-bottom: -10px;
 }
 
 .form__fieldset--color {
 //  outline: 2px dashed blue;
-//  margin-bottom: 20px;
+  margin-bottom: -33px;
 }
 
 .form__fieldset--personal {
   margin-top: -10px;
 //  padding-bottom: 140px;
 //  outline: 2px dashed blue;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 
 }
 
@@ -355,13 +359,13 @@ input[type="text"] + label:invalid::before {
   margin-top: -45px;
 //  padding-bottom: 30px;
 //  outline: 2px dashed blue;
-  margin-bottom: 40px;
+  margin-bottom: 22px;
 }
 
 .form__fieldset--mail {
 //  outline: 2px dashed blue;
   margin-top: -53px;
-  margin-bottom: 130px;
+  margin-bottom: 110px;
 }
 
 .form__fieldset--extra {
@@ -500,6 +504,7 @@ input[type="text"] + label:invalid::before {
 
   .form__item--phone .form__input {
     width: 100%;
+    z-index: 100;
     margin: 0;
     margin-left: -15px;
     background-color: #f1f1f1;
@@ -592,6 +597,7 @@ input[type="text"] + label:invalid::before {
   .form__fieldset--phone {
     margin-top: -96px;
     background-color: #f1f1f1;
+    margin-bottom: 41px;
   }
 
 
@@ -602,20 +608,27 @@ input[type="text"] + label:invalid::before {
   }
 
   .form__fieldset--extra {
-    margin-top: -70px;
+    margin-top: -50px;
     padding-bottom: 0;
 //    margin-bottom: 25px;
   }
 
 
   .form__submessage {
-    display: block;
+    display: none;
     position: static;
     order: 2;
 //    margin: 0;
-    margin-top: -25px;
+    margin-top: -27px;
+    margin-left: 375px;
     width: 300px;
     font-size: 17px;
+
+    &--alternate {
+      display: block;
+      min-width: 300px;
+      margin-bottom: 35px;
+    }
   }
 
 
@@ -639,9 +652,9 @@ input[type="text"] + label:invalid::before {
     position: relative;
   }
 
-  .form__submessage {
-    margin-left: 380px;
-  }
+//  .form__submessage {
+//    margin-left: 380px;
+//  }
 }
 
 
@@ -679,7 +692,7 @@ input[type="text"] + label:invalid::before {
   }
 
   .form__fieldset--extra {
-//    margin-bottom: 85px;
+    margin-top: -60px;
   }
 
   .form__item--personal .form__input {
@@ -779,7 +792,7 @@ input[type="text"] + label:invalid::before {
   }
 
   .form__fieldset--extra .form__title {
-    margin-top: 100px;
+    margin-top: 90px;
     margin-left: 65px;
     margin-right: 70px;
   }
@@ -788,7 +801,7 @@ input[type="text"] + label:invalid::before {
     padding: 15px;
     margin:0;
     margin-left: -10px;
-    margin-top: 75px;
+    margin-top: 65px;
     min-width: 670px;
     min-height: 120px;
     background-color: #ffffff;
@@ -799,5 +812,6 @@ input[type="text"] + label:invalid::before {
   .form__submessage {
     margin-top: 10px;
     margin-left: 585px;
+    margin-bottom: 77px;
    }
 }
