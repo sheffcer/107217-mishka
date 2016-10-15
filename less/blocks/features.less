@@ -5,10 +5,13 @@
     position: absolute;
     content: "";
     top: -42px;
-    height: 34px;
+//    height: 34px;
+    height: 9px;
     width:100%;
     background-image: url("/img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
+    background-size: contain;
+//    transform: scale(0.5);
   }
 }
 
@@ -95,6 +98,10 @@
   .features {
     &::before {
       top: -60px;
+      height: 20px;
+      width: 100%;
+      background-repeat: repeat-x;
+      background-size: contain;
     }
   }
 
@@ -160,6 +167,9 @@
     min-height: 645px;
     &::before {
       top: -35px;
+      height: 36px;
+      width: 100%;
+      background-size: 1800px auto;
     }
   }
 

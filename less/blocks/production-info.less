@@ -1,13 +1,23 @@
 .production-info {
   margin-bottom: 60px;
 //  min-height: 502px;
-}
+ }
 
 .production-info__inner {
   .container();
     outline: 1px solid black;
     outline: 1px solid #ececec;
     padding-bottom: 30px;
+
+  &:hover {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
+  }
+
+  &:active {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
+  }
 
 }
 

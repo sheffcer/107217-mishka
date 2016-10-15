@@ -4,10 +4,11 @@
     position: absolute;
     content: "";
     top: -40px;
-    height: 34px;
+    height: 9px;
     width:100%;
     background-image: url("/img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
+    background-size: contain;
   }
 }
 
@@ -49,6 +50,10 @@
   .location {
     &::before {
       top: 0;
+      height: 20px;
+      width: 100%;
+      background-repeat: repeat-x;
+      background-size: contain;
     }
   }
 
@@ -72,7 +77,11 @@
 @media @desktop-widths {
   .location {
     &::before {
+      z-index: 100;
       top: 50px;
+      height: 36px;
+      width: 100%;
+      background-size: 1800px auto;
     }
   }
 
