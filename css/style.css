@@ -231,11 +231,6 @@ body {
   display: block;
   z-index: 500;
 }
-.goods-categories__link:hover {
-  padding-top: 2px;
-  padding-bottom: 0;
-  transition: 0.4s;
-}
 .goods-categories__item:nth-child(1) {
   background-color: #63d1bb;
 }
