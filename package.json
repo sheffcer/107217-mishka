@@ -25,6 +25,7 @@
     "grunt-contrib-watch": "1.0.0",
     "grunt-css-mqpacker": "^3.0.1",
     "grunt-csso": "^1.0.0",
+    "grunt-gh-pages": "^2.0.0",
     "grunt-postcss": "^0.7.2",
     "grunt-svgmin": "^4.0.0",
     "grunt-svgstore": "^1.0.0",

@@ -167,6 +167,15 @@ module.exports = function(grunt) {
           "build/css/style.min.css": ["build/css/style.css"]
         }
       }
+    },
+
+    // публикация на GitHub Pages (будет доступен в сети по адресу http://ВАШ-НИКНЕЙМ.github.io/ВАШ-РЕПОЗИТОРИЙ/)
+    'gh-pages': {
+      options: {
+        // какую папку считать результатом работы
+        base: 'build'
+      },
+      src: '**/*'
     }
 
 //    concat: {
@@ -198,7 +207,8 @@ module.exports = function(grunt) {
     "postcss",
     "csso",
     "symbols",
-    "imagemin"
+    "imagemin",
+    "gh-pages"
 //    "concat",
 //    "uglify"
   ]);
