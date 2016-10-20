@@ -356,7 +356,7 @@ body {
   top: -42px;
   height: 9px;
   width: 100%;
-  background-image: url("/img/bg-zigzag-line.svg");
+  background-image: url("img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
   background-size: contain;
 }
@@ -394,7 +394,7 @@ body {
   height: 45px;
 }
 .features__item--ecology::before {
-  background: url("/img/icon-feature-1.svg") no-repeat;
+  background: url("img/icon-feature-1.svg") no-repeat;
   position: absolute;
   left: 8px;
   top: -8px;
@@ -410,19 +410,19 @@ body {
   top: 0;
 }
 .features__item--love::before {
-  background: url("/img/icon-feature-2.svg") no-repeat;
+  background: url("img/icon-feature-2.svg") no-repeat;
   position: absolute;
   left: 3px;
   top: 0;
 }
 .features__item--manufacture::before {
-  background: url("/img/icon-feature-4.svg") no-repeat;
+  background: url("img/icon-feature-4.svg") no-repeat;
   position: absolute;
   left: -5px;
   top: -2px;
 }
 .features__item--gift::before {
-  background: url("/img/icon-feature-6.svg") no-repeat;
+  background: url("img/icon-feature-6.svg") no-repeat;
   position: absolute;
   left: 3px;
   top: -2px;
