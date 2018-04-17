@@ -734,7 +734,7 @@ body {
   margin-right: 0;
 }
 .modal-cart {
-  display: none;
+  display: block;
 }
 .modal-cart__content {
   z-index: 9999;
@@ -748,7 +748,7 @@ body {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 .modal-cart__shadow {
-  display: none;
+  display: block;
   z-index: 1;
   position: fixed;
   top: 0;

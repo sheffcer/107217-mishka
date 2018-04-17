@@ -40,3 +40,14 @@ navToggle.addEventListener('click', function() {
     navMain3.classList.remove('main-nav--opened');
   }
 });
+
+var modal = document.querySelector('modal-cart');
+var modalShadow = document.querySelector('modal-cart__shadow');
+var modalButton = document.querySelector('modal-cart__input');
+
+modalButton.addEventListener('click', function () {
+  modalShadow.style.display='none';
+  modal.style.display='none';
+
+})
+
