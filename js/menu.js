@@ -40,3 +40,20 @@ navToggle.addEventListener('click', function() {
     navMain3.classList.remove('main-nav--opened');
   }
 });
+
+var modal = document.querySelector('.modal-cart');
+var modalShadow = document.querySelector('.modal-cart__shadow');
+var modalButton = document.querySelector('.modal-cart .btn');
+var modalClose = document.querySelector('.modal-cart__close');
+
+modalButton.addEventListener('click', function () {
+  modalShadow.style.cssText = 'display:none';
+  modal.style.cssText = 'display:none';
+
+});
+
+modalClose.addEventListener('click', function () {
+  modalShadow.style.cssText = 'display:none';
+  modal.style.cssText = 'display:none';
+});
+
