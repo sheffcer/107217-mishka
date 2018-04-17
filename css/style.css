@@ -753,8 +753,8 @@ body {
   position: fixed;
   top: 50%;
   left: 26%;
-  width: 260px;
   padding: 0 30px;
+  width: 260px;
   background-color: #ffffff;
   border: 1px solid #c6c6c6;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -1922,11 +1922,14 @@ body {
   .modal-cart {
     min-width: 567px;
   }
+  .modal-cart__close {
+    left: 590px;
+    top: 10px;
+  }
   .modal-cart__content {
     min-width: 567px;
     top: 50%;
-    left: 10%;
-    width: 352px;
+    left: 24%;
   }
   .modal-cart__list {
     margin-top: 25px;
@@ -1948,10 +1951,14 @@ body {
     line-height: 30px;
     margin-left: 210px;
   }
+  .modal-cart__close {
+    left: 590px;
+    top: 10px;
+  }
   .modal-cart__content {
     min-width: 567px;
     top: 50%;
-    left: 24%;
+    left: 33%;
     width: 352px;
   }
   .goods__inner {
