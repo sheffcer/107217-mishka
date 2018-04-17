@@ -734,7 +734,7 @@ body {
   margin-right: 0;
 }
 .modal-cart {
-  display: block;
+  display: none;
   position: relative;
 }
 .modal-cart__close {
@@ -760,7 +760,7 @@ body {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 .modal-cart__shadow {
-  display: block;
+  display: none;
   z-index: 1;
   position: fixed;
   top: 0;
@@ -789,6 +789,10 @@ body {
   font-size: 15px;
   line-height: 30px;
   color: #444444;
+}
+.modal-cart__subtitle--roadshow {
+  margin-left: 0;
+  text-align: center;
 }
 .modal-cart__list {
   margin-top: 20px;
@@ -1950,6 +1954,10 @@ body {
     font-size: 17px;
     line-height: 30px;
     margin-left: 210px;
+  }
+  .modal-cart__subtitle--roadshow {
+    margin-left: 0;
+    text-align: center;
   }
   .modal-cart__close {
     left: 590px;

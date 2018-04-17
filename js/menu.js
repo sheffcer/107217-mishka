@@ -13,6 +13,7 @@
 //navMain3.classList.toggle('main-nav--closed');
 //});
 
+(function () {
 
 var navMain1 = document.querySelector('.main-nav--order');
 var navMain3 = document.querySelector('.main-nav--user');
@@ -57,3 +58,22 @@ modalClose.addEventListener('click', function () {
   modal.style.cssText = 'display:none';
 });
 
+var showModal = function () {
+  modalShadow.style.cssText = 'display:block';
+  modal.style.cssText = 'display:block';
+};
+
+setTimeout(showModal, 5000);
+
+modalButton.addEventListener('click', function () {
+  modalShadow.style.cssText = 'display:none';
+  modal.style.cssText = 'display:none';
+
+});
+
+modalClose.addEventListener('click', function () {
+  modalShadow.style.cssText = 'display:none';
+  modal.style.cssText = 'display:none';
+});
+
+})();
