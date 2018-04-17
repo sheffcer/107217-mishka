@@ -44,10 +44,16 @@ navToggle.addEventListener('click', function() {
 var modal = document.querySelector('.modal-cart');
 var modalShadow = document.querySelector('.modal-cart__shadow');
 var modalButton = document.querySelector('.modal-cart .btn');
+var modalClose = document.querySelector('.modal-cart__close');
 
 modalButton.addEventListener('click', function () {
-  modalShadow.style.display='none';
-  modal.style.display='none';
+  modalShadow.style.cssText = 'display:none';
+  modal.style.cssText = 'display:none';
 
+});
+
+modalClose.addEventListener('click', function () {
+  modalShadow.style.cssText = 'display:none';
+  modal.style.cssText = 'display:none';
 });
 
