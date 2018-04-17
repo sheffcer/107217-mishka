@@ -41,13 +41,13 @@ navToggle.addEventListener('click', function() {
   }
 });
 
-var modal = document.querySelector('modal-cart');
-var modalShadow = document.querySelector('modal-cart__shadow');
-var modalButton = document.querySelector('modal-cart__input');
+var modal = document.querySelector('.modal-cart');
+var modalShadow = document.querySelector('.modal-cart__shadow');
+var modalButton = document.querySelector('.modal-cart .btn');
 
 modalButton.addEventListener('click', function () {
   modalShadow.style.display='none';
   modal.style.display='none';
 
-})
+});
 
