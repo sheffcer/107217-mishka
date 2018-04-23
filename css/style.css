@@ -1924,7 +1924,10 @@ body {
     background-position: 0 0;
   }
   .modal-cart {
-    min-width: 567px;
+    width: 620px;
+    height: 320px;
+    background-image: url("/img/modal_background.jpg") url("");
+    background-repeat: no-repeat;
   }
   .modal-cart__close {
     left: 590px;
