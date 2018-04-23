@@ -315,8 +315,8 @@ body {
   outline: none;
 }
 .btn:hover {
-  color: #ffffff;
-  background-color: #444444;
+  background-color: #ffffff;
+  color: #28464e;
   transition: 0.4s;
 }
 .btn:active {
@@ -337,9 +337,8 @@ body {
   margin-top: 30px;
   margin-bottom: 45px;
   background: none;
-  background-color: #63d1bb;
   color: #ffffff;
-  border: none;
+  border: 2px solid #ffffff;
 }
 .btn--form {
   margin-top: 20px;
@@ -753,9 +752,6 @@ body {
   position: fixed;
   top: 50%;
   left: 26%;
-  padding: 0 30px;
-  width: 260px;
-  background-color: #ffffff;
   border: 1px solid #c6c6c6;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
@@ -769,16 +765,6 @@ body {
   height: 100%;
   opacity: 0.85;
   background-color: rgba(255, 255, 255, 0.6);
-}
-.modal-cart__title {
-  margin-top: 35px;
-  margin-bottom: 20px;
-  font-family: "Open Sans Bold", "Arial", sans-serif;
-  font-size: 25px;
-  line-height: 30px;
-  color: #000000;
-  text-transform: uppercase;
-  text-align: center;
 }
 .modal-cart__subtitle {
   display: block;
@@ -1690,10 +1676,13 @@ body {
     width: 230px;
   }
   .btn--modal-cart {
-    margin-left: 110px;
-    width: 352px;
-    font-size: 18px;
-    line-height: 16px;
+    width: 160px;
+    padding: 0;
+    padding: 10px 10px;
+    margin: 0 auto;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 17.35px;
+    font-weight: bold;
   }
   .features__inner {
     width: 668px;
@@ -1923,20 +1912,17 @@ body {
   .social-link--twitter {
     background-position: 0 0;
   }
-  .modal-cart {
-    width: 620px;
-    height: 320px;
-    background-image: url("/img/modal_background.jpg") url("");
-    background-repeat: no-repeat;
-  }
   .modal-cart__close {
     left: 590px;
     top: 10px;
   }
   .modal-cart__content {
-    min-width: 567px;
+    width: 620px;
+    height: 325px;
     top: 50%;
     left: 24%;
+    background-image: url("../img/modal_background.jpg");
+    background-repeat: no-repeat;
   }
   .modal-cart__list {
     margin-top: 25px;
@@ -1948,10 +1934,12 @@ body {
     height: 50px;
   }
   .modal-cart__title {
-    margin-top: 50px;
-    margin-bottom: 40px;
-    font-size: 30px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    padding-top: 14px;
+    font-size: 15.6px;
+    line-height: 21.4px;
     text-align: center;
+    color: #28464e;
   }
   .modal-cart__subtitle {
     font-size: 17px;
@@ -1963,14 +1951,19 @@ body {
     text-align: center;
   }
   .modal-cart__close {
-    left: 590px;
-    top: 10px;
+    left: 580px;
+    top: 24px;
   }
   .modal-cart__content {
-    min-width: 567px;
     top: 50%;
     left: 33%;
-    width: 352px;
+  }
+  .modal-cart__head-wrapper {
+    position: relative;
+    height: 75px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 180px;
+    margin-top: -15px;
   }
   .goods__inner {
     width: 668px;
