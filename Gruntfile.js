@@ -207,7 +207,7 @@ module.exports = function(grunt) {
     "postcss",
     "csso",
     "symbols",
-    "imagemin",
+    // "imagemin",
     "gh-pages"
 //    "concat",
 //    "uglify"
