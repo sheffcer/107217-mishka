@@ -315,8 +315,8 @@ body {
   outline: none;
 }
 .btn:hover {
-  background-color: #ffffff;
-  color: #28464e;
+  color: #ffffff;
+  background-color: #444444;
   transition: 0.4s;
 }
 .btn:active {
@@ -337,8 +337,9 @@ body {
   margin-top: 30px;
   margin-bottom: 45px;
   background: none;
+  background-color: #63d1bb;
   color: #ffffff;
-  border: 2px solid #ffffff;
+  border: none;
 }
 .btn--form {
   margin-top: 20px;
@@ -733,30 +734,33 @@ body {
   margin-right: 0;
 }
 .modal-cart {
-  display: none;
+  display: block;
   position: relative;
 }
 .modal-cart__close {
   border: 0;
   outline: 0;
   background-color: #ffffff;
-  width: 24px;
-  height: 24px;
+  width: 21px;
+  height: 21px;
   position: absolute;
   left: 280px;
   top: 10px;
-  background: url(../img/cross-black.svg);
+  background: url(../img/icon-menu-close.svg);
 }
 .modal-cart__content {
   z-index: 9999;
   position: fixed;
   top: 50%;
   left: 26%;
+  padding: 0 30px;
+  width: 260px;
+  background-color: #ffffff;
   border: 1px solid #c6c6c6;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 .modal-cart__shadow {
-  display: none;
+  display: block;
   z-index: 1;
   position: fixed;
   top: 0;
@@ -764,7 +768,17 @@ body {
   width: 100%;
   height: 100%;
   opacity: 0.85;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: #ffffff;
+}
+.modal-cart__title {
+  margin-top: 35px;
+  margin-bottom: 20px;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
 }
 .modal-cart__subtitle {
   display: block;
@@ -775,10 +789,6 @@ body {
   font-size: 15px;
   line-height: 30px;
   color: #444444;
-}
-.modal-cart__subtitle--roadshow {
-  margin-left: 0;
-  text-align: center;
 }
 .modal-cart__list {
   margin-top: 20px;
@@ -1200,16 +1210,6 @@ body {
   border-bottom: 2px solid #62d1ba;
   transition: 0.4s;
 }
-.form__input::-webkit-input-placeholder {
-  color: #444444;
-  transition: 0.4s;
-  opacity: 0.3;
-}
-.form__input::-moz-placeholder {
-  color: #444444;
-  transition: 0.4s;
-  opacity: 0.3;
-}
 .form__input:-ms-input-placeholder {
   color: #444444;
   transition: 0.4s;
@@ -1219,12 +1219,6 @@ body {
   color: #444444;
   transition: 0.4s;
   opacity: 0.3;
-}
-.form__input:active::-webkit-input-placeholder {
-  opacity: 1;
-}
-.form__input:active::-moz-placeholder {
-  opacity: 1;
 }
 .form__input:active:-ms-input-placeholder {
   opacity: 1;
@@ -1253,22 +1247,6 @@ body {
   outline: none;
   border-bottom: 2px solid #f0b1b1;
 }
-.form__textarea::-webkit-input-placeholder {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  color: #444444;
-  opacity: 0.3;
-  transition: 0.4s;
-}
-.form__textarea::-moz-placeholder {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  color: #444444;
-  opacity: 0.3;
-  transition: 0.4s;
-}
 .form__textarea:-ms-input-placeholder {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 16px;
@@ -1284,12 +1262,6 @@ body {
   color: #444444;
   opacity: 0.3;
   transition: 0.4s;
-}
-.form__textarea:active::-webkit-input-placeholder {
-  opacity: 1;
-}
-.form__textarea:active::-moz-placeholder {
-  opacity: 1;
 }
 .form__textarea:active:-ms-input-placeholder {
   opacity: 1;
@@ -1676,13 +1648,10 @@ body {
     width: 230px;
   }
   .btn--modal-cart {
-    width: 160px;
-    padding: 0;
-    padding: 10px 0;
-    margin: 0 auto;
-    font-family: 'Montserrat', Arial, sans-serif;
-    font-size: 17.35px;
-    font-weight: normal;
+    margin-left: 110px;
+    width: 352px;
+    font-size: 18px;
+    line-height: 16px;
   }
   .features__inner {
     width: 668px;
@@ -1912,17 +1881,17 @@ body {
   .social-link--twitter {
     background-position: 0 0;
   }
+  .modal-cart {
+    min-width: 567px;
+  }
   .modal-cart__close {
     left: 590px;
     top: 10px;
   }
   .modal-cart__content {
-    width: 620px;
-    height: 325px;
+    min-width: 567px;
     top: 50%;
     left: 24%;
-    background-image: url("../img/modal_background.jpg");
-    background-repeat: no-repeat;
   }
   .modal-cart__list {
     margin-top: 25px;
@@ -1934,36 +1903,25 @@ body {
     height: 50px;
   }
   .modal-cart__title {
-    font-family: 'Montserrat', Arial, sans-serif;
-    padding-top: 14px;
-    font-size: 15.6px;
-    line-height: 21.4px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-size: 30px;
     text-align: center;
-    color: #28464e;
   }
   .modal-cart__subtitle {
     font-size: 17px;
     line-height: 30px;
     margin-left: 210px;
   }
-  .modal-cart__subtitle--roadshow {
-    margin-left: 0;
-    text-align: center;
-  }
   .modal-cart__close {
-    left: 580px;
-    top: 24px;
+    left: 590px;
+    top: 10px;
   }
   .modal-cart__content {
+    min-width: 567px;
     top: 50%;
     left: 33%;
-  }
-  .modal-cart__head-wrapper {
-    position: relative;
-    height: 75px;
-    background-color: rgba(255, 255, 255, 0.5);
-    margin-bottom: 180px;
-    margin-top: -15px;
+    width: 352px;
   }
   .goods__inner {
     width: 668px;
@@ -2272,14 +2230,6 @@ body {
     background-color: #ffffff;
     border: 2px solid #444444;
     outline: 0;
-  }
-  .form__textarea::-webkit-input-placeholder {
-    font-size: 19px;
-    line-height: 18px;
-  }
-  .form__textarea::-moz-placeholder {
-    font-size: 19px;
-    line-height: 18px;
   }
   .form__textarea:-ms-input-placeholder {
     font-size: 19px;
